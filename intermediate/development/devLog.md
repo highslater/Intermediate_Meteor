@@ -53,9 +53,29 @@ Changes to your project's package version selections:
 autopublish  removed from your project        
 insecure     removed from your project
 
-=> Meteor server restarted       
+=> Meteor server restarted   
 
-```
+Changes to your project's package version selections:
+                                              
+kadira:blaze-layout  added, version 2.3.0     
+kadira:flow-router   added, version 2.12.1
+reactive-dict        added, version 1.1.7
+
+=> Meteor server restarted  
+
+highslater@mint64 ~/Programming/Meteor/LevelUpTuts/Intermediate_Meteor/intermediate $ meteor add check
+                                              
+check: Check whether a value matches a pattern
+
+```   
+
+###Intermediate Meteor Tutorial #3 - Project Structure: 
+###Intermediate Meteor Tutorial #6 - Defining A Schema In Meteor:  
+###Intermediate Meteor Tutorial #8 - Insert Permissions, Publishing & Meteor Toys:  
+
+ 
+
+
 
 
 
