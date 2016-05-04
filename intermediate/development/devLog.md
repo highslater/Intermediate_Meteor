@@ -36,6 +36,25 @@ drwxr-xr-x 3 highslater highslater 4.0K May  4 13:17 .meteor
 -rw-r--r-- 1 highslater highslater  153 May  4 13:17 package.json
 drwxr-xr-x 2 highslater highslater 4.0K May  4 13:17 server
 
+
+@mint64 ~/Programming/Meteor/LevelUpTuts/Intermediate_Meteor/intermediate 
+$ meteor
+
+[[[[[ ~/Programming/Meteor/LevelUpTuts/Intermediate_Meteor/intermediate ]]]]]
+
+=> Started proxy.                             
+=> Started MongoDB.                           
+=> Started your app.                          
+
+=> App running at: http://localhost:3000/
+                                              
+Changes to your project's package version selections:
+                                              
+autopublish  removed from your project        
+insecure     removed from your project
+
+=> Meteor server restarted       
+
 ```
 
 
