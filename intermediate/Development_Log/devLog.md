@@ -74,7 +74,11 @@ check: Check whether a value matches a pattern
 ###Intermediate Meteor Tutorial #8 - Insert Permissions, Publishing & Meteor Toys: 
 ###Intermediate Meteor Tutorial #10 - Creating Partials and Adding Styles
 ###Intermediate Meteor Tutorial #12 - Building Our Recipes List: 
-###Intermediate Meteor Tutorial #13 - Template Level Subscriptions:  
+###Intermediate Meteor Tutorial #13 - Template Level Subscriptions: 
+###Intermediate Meteor Tutorial #17 - Login & Logout Redirecting:  
+###Intermediate Meteor Tutorial #18 - Update Methods & Adding To Menu:  
+
+ 
  
 
 
