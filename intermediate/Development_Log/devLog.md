@@ -1,5 +1,6 @@
-##Re-Do Tutorial.  
-###use Meteor Sources 
+#Re-Do Tutorial.  
+##use Meteor Sources 
+###Add: option to upload photos, comments.
 
 
 
