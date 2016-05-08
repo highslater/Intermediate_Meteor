@@ -69,6 +69,9 @@ Meteor.methods({
             } // end of $set
         }); // end of Recipes.update
     }, // end of toggleMenuItem
+    deleteRecipe: function(id) {
+        Recipes.remove(id);
+    }, // end of deleteRecipe
 }); // end of Meteor.methods
 
 
