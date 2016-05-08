@@ -1,3 +1,10 @@
+##Re-Do Tutorial.  
+###use Meteor Sources 
+
+
+
+
+
 ###Intermediate Meteor Tutorial #2 - Package Management:  
 
 ######Console Output:  
