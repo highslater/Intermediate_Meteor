@@ -90,7 +90,51 @@ zimme:active-route
 gwendall:auth-client-callbacks  
 
 If anyone is getting an error after adding these packages, adding another package called 'check' appears to have fixed this (at least for now).  
+```Console  
 
+@mint64 ~/Intermediate_Meteor/intermediate 
+$ meteor search kadira:flow-router
+
+Matching packages:                            
+kadira:flow-router      Carefully Designed Client Side Router for Meteor
+kadira:flow-router-ssr  Same as kadira:flow-router, but with SSR support
+
+You can use 'meteor show' to get more information on a specific item.
+@mint64 ~/Intermediate_Meteor/intermediate 
+$ meteor show kadira:flow-router
+
+Package: kadira:flow-router@2.12.1            
+Maintainers: kadira                           
+Git: https://github.com/kadirahq/flow-router.git
+Exports: FlowRouter                                                                     
+Carefully Designed Client Side Router for Meteor.
+FlowRouter is a very simple router for Meteor. It does routing for client-side
+apps and does not handle rendering itself.
+It exposes a great API for changing the URL and reactively getting data from
+the URL. However, inside the router, it's not reactive. Most importantly,
+FlowRouter is designed with performance in mind and it focuses on what it does
+best: **routing**.
+
+> We've released 2.0 and follow this [migration guide](#migrating-into-20) if
+you are already using FlowRouter.
+                                              
+Recent versions:                              
+  2.10.0  November 24th, 2015                 
+  2.10.1  February 1st, 2016
+  2.11.0  March 16th, 2016      installed
+  2.12.0  April 21st, 2016
+  2.12.1  April 21st, 2016      installed
+
+Older versions of kadira:flow-router have been hidden. To see all 20 versions,
+run 'meteor show --show-all kadira:flow-router'.
+@mint64 ~/Intermediate_Meteor/intermediate $ meteor add kadira:flow-router                                             
+Changes to your project's package version selections:
+                                              
+kadira:flow-router  added, version 2.12.1     
+reactive-dict       added, version 1.1.7                                             
+kadira:flow-router: Carefully Designed Client Side Router for Meteor
+
+```
 ######.meteor/packages [ AFTER ] 
 
 ```
