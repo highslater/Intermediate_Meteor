@@ -1,0 +1,47 @@
+###Intermediate Meteor Tutorial #1 - Project Introduction:  
+
+######Console Output:  
+
+```Console  
+
+@mint64 ~/Intermediate_Meteor 
+$ meteor create intermediate
+
+Created a new Meteor app in 'intermediate'.   
+
+To run your new app:                          
+  cd intermediate                             
+  meteor                                      
+                                              
+If you are new to Meteor, try some of the learning resources here:
+  https://www.meteor.com/learn       
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
