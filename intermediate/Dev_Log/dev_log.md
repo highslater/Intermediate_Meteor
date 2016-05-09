@@ -65,7 +65,7 @@ $ meteor
 ![web output of default meteor app] (./Images/image_001.png)
 
 
-
+```text
 # Meteor packages used by this project, one per line.
 # Check this file (and the other files in this directory) into your repository.
 #
@@ -87,7 +87,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-
+```
 
 
 
