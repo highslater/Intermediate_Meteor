@@ -5,7 +5,7 @@ In this series we are going to be exploring some of the packages and techniques 
 ###Tutorial #1 - Project Introduction: 
 Here I introduce the project we'll be creating in this series.
 ###Tutorial #2 - Package Management:  
-Published on Oct 14, 2015
+Published on Oct 14, 2015  
 In this Intermediate Meteor video tutorial we get our project started!! I then talk a bit about how to easily add packages and what some of those packages are. Please copy the list below and paste it into the end of your packages file after deleting insecure and autopublish. 
 
 Packages:  
@@ -24,7 +24,10 @@ accounts-password
 matb33:bootstrap-glyphicons  
 msavin:jetsetter  
 zimme:active-route  
-gwendall:auth-client-callbacks
+gwendall:auth-client-callbacks  
+
+If anyone is getting an error after adding these packages, adding another package called 'check' appears to have fixed this (at least for now).
+
 
 ######Console Output:  
 
@@ -61,6 +64,29 @@ $ meteor
 
 ![web output of default meteor app] (./Images/image_001.png)
 
+
+
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+reactive-var            # Reactive variable for tracker
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+standard-minifier-css   # CSS minifier run for production mode
+standard-minifier-js    # JS minifier run for production mode
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+ecmascript              # Enable ECMAScript2015+ syntax in app code
+
+autopublish             # Publish all data to the clients (for prototyping)
+insecure                # Allow all DB writes from clients (for prototyping)
 
 
 
