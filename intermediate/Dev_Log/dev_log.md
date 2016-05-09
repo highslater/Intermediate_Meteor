@@ -1,4 +1,6 @@
 ##Intermediate Meteor Tutorial
+#####Notes:  
+Recipe Book, Caloric Log, Exercise Log, ToDo Log 
 In this series we are going to be exploring some of the packages and techniques that you will encounter in making web applications with Meteor. 
 ###Tutorial #1 - Project Introduction: 
 Here I introduce the project we'll be creating in this series.
@@ -23,10 +25,6 @@ matb33:bootstrap-glyphicons
 msavin:jetsetter  
 zimme:active-route  
 gwendall:auth-client-callbacks
-
-
-#####Notes:  
-Recipe Book, Caloric Log, Exercise Log, ToDo Log 
 
 ######Console Output:  
 
