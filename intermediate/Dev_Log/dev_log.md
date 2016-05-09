@@ -1,4 +1,7 @@
-###Intermediate Meteor Tutorial #1 - Project Introduction:  
+###Intermediate Meteor Tutorial #1 - Project Introduction: 
+
+#####Notes:  
+Recipe Book, Caloric Log, Exercise Log, ToDo Log 
 
 ######Console Output:  
 
