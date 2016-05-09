@@ -6,25 +6,7 @@ In this series we are going to be exploring some of the packages and techniques 
 Here I introduce the project we'll be creating in this series.
 ###Tutorial #2 - Package Management:  
 Published on Oct 14, 2015  
-In this Intermediate Meteor video tutorial we get our project started!! I then talk a bit about how to easily add packages and what some of those packages are. Please copy the list below and paste it into the end of your packages file after deleting insecure and autopublish. 
-
-Packages:  
-kadira:flow-router  
-kadira:blaze-layout  
-erasaur:meteor-lodash  
-stolinski:stylus-multi  
-fortawesome:fontawesome  
-spiderable  
-fastclick  
-raix:handlebar-helpers  
-aldeed:collection2  
-aldeed:autoform  
-accounts-ui  
-accounts-password  
-matb33:bootstrap-glyphicons  
-msavin:jetsetter  
-zimme:active-route  
-gwendall:auth-client-callbacks  
+In this Intermediate Meteor video tutorial we get our project started!! I then talk a bit about how to easily add packages and what some of those packages are. 
 
 If anyone is getting an error after adding these packages, adding another package called 'check' appears to have fixed this (at least for now).
 
@@ -90,6 +72,25 @@ autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 ```
 
+Please copy the list below and paste it into the end of your packages file after deleting insecure and autopublish. 
+
+Packages:  
+kadira:flow-router  
+kadira:blaze-layout  
+erasaur:meteor-lodash  
+stolinski:stylus-multi  
+fortawesome:fontawesome  
+spiderable  
+fastclick  
+raix:handlebar-helpers  
+aldeed:collection2  
+aldeed:autoform  
+accounts-ui  
+accounts-password  
+matb33:bootstrap-glyphicons  
+msavin:jetsetter  
+zimme:active-route  
+gwendall:auth-client-callbacks  
 
 ######.meteor/packages [ AFTER ] 
 
