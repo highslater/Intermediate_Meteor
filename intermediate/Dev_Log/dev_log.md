@@ -33,7 +33,7 @@ $ meteor
 
 ######Web Output:  
 
-![./Images/image_001.png] (./Images/image_001.png)
+![web output of default meteor app] (./Images/image_001.png)
 
 
 
