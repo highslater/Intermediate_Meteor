@@ -33,7 +33,7 @@ $ meteor
 
 ######Web Output:  
 
-![./Images/Selection_001.png] (./Images/Selection_001.png)
+![./Images/image_001.png] (./Images/image_001.png)
 
 
 
