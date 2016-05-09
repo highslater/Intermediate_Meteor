@@ -64,6 +64,7 @@ $ meteor
 
 ![web output of default meteor app] (./Images/image_001.png)
 
+######.meteor/packages  
 
 ```text
 # Meteor packages used by this project, one per line.
