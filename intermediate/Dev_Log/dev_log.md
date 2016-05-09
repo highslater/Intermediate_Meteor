@@ -127,7 +127,9 @@ Recent versions:
 
 Older versions of kadira:flow-router have been hidden. To see all 20 versions,
 run 'meteor show --show-all kadira:flow-router'.
-@mint64 ~/Intermediate_Meteor/intermediate $ meteor add kadira:flow-router                                             
+@mint64 ~/Intermediate_Meteor/intermediate 
+$ meteor add kadira:flow-router  
+                                           
 Changes to your project's package version selections:
                                               
 kadira:flow-router  added, version 2.12.1     
