@@ -1,8 +1,5 @@
 ###Intermediate Meteor Tutorial #1 - Project Introduction:  
 
-
-
-
 ######Console Output:  
 
 ```Console  
@@ -33,6 +30,10 @@ $ meteor
 => App running at: http://localhost:3000/
 
 ```
+
+######Web Output:  
+
+![./images/selection_001.png] (./images/selection_001.png)
 
 
 
