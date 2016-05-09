@@ -8,9 +8,6 @@ Here I introduce the project we'll be creating in this series.
 Published on Oct 14, 2015  
 In this Intermediate Meteor video tutorial we get our project started!! I then talk a bit about how to easily add packages and what some of those packages are. 
 
-If anyone is getting an error after adding these packages, adding another package called 'check' appears to have fixed this (at least for now).
-
-
 ######Console Output:  
 
 ```Console  
@@ -91,6 +88,8 @@ matb33:bootstrap-glyphicons
 msavin:jetsetter  
 zimme:active-route  
 gwendall:auth-client-callbacks  
+
+If anyone is getting an error after adding these packages, adding another package called 'check' appears to have fixed this (at least for now).  
 
 ######.meteor/packages [ AFTER ] 
 
