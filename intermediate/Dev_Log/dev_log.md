@@ -1,8 +1,9 @@
+###Intermediate Meteor Tutorial #1 - Project Introduction:  
 
 
 
 
-
+######Console Output:  
 
 ```Console  
 
