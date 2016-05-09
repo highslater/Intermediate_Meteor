@@ -16,6 +16,17 @@ To run your new app:
 If you are new to Meteor, try some of the learning resources here:
   https://www.meteor.com/learn       
 
+@mint64 ~/Programming/Meteor/LevelUpTuts/Intermediate_Meteor/intermediate 
+$ meteor
+
+[[[[[ ~/Programming/Meteor/LevelUpTuts/Intermediate_Meteor/intermediate ]]]]]
+
+=> Started proxy.                             
+=> Started MongoDB.                           
+=> Started your app.                          
+
+=> App running at: http://localhost:3000/
+
 ```
 
 
