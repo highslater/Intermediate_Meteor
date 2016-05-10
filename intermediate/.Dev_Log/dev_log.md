@@ -167,8 +167,8 @@ fortawesome:fontawesome     # Font Awesome (official): 500+ scalable vector icon
 spiderable              # Makes the application crawlable to web spiders
 fastclick               # Faster touch events on mobile
 raix:handlebar-helpers      # Handlebar helpers
-aldeed:collection2            # Automatic validation of insert and update operations on the client and server.
-aldeed:autoform     # Easily create forms with automatic insert and update, and automatic reactive validation.
+aldeed:collection2      # Automatic validation of insert and update operations on the client and server.
+aldeed:autoform         # Easily create forms with automatic insert and update, and automatic reactive validation.
 accounts-ui     # Simple templates to add login widgets to an app
 accounts-password       # Password support for accounts
 matb33:bootstrap-glyphicons     # Bootstrap 3.3.4: glyphicons
