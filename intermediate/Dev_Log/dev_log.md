@@ -1,6 +1,6 @@
 ##Intermediate Meteor Tutorial
 #####Notes:  
-Recipe Book, Caloric Log, Exercise Log, ToDo Log  
+Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
 In this series we are going to be exploring some of the packages and techniques that you will encounter in making web applications with Meteor. 
 ###Tutorial #1 - Project Introduction: 
 Here I introduce the project we'll be creating in this series.
@@ -129,7 +129,7 @@ Older versions of kadira:flow-router have been hidden. To see all 20 versions,
 run 'meteor show --show-all kadira:flow-router'.
 @mint64 ~/Intermediate_Meteor/intermediate 
 $ meteor add kadira:flow-router  
-                                           
+
 Changes to your project's package version selections:
                                               
 kadira:flow-router  added, version 2.12.1     
@@ -164,9 +164,17 @@ kadira:flow-router      # Carefully Designed Client Side Router for Meteor
 ```
 
 
+###Tutorial #3 - Project Structure:  
 
+Setting up our project structure and what impact that has on the files within given directories
 
+######Folder Structure [BEFORE]  
 
+![] (./Images/image_002.png)  
+
+######Folder Structure [AFTER]  
+
+![] (./Images/image_003.png)
 
 
 
