@@ -179,6 +179,8 @@ ___
 
 <kbd>File Names?</kbd>
 
+~~ strike throughs ~~
+
 ######Folder Structure [AFTER]  
 
 ![Folder Structure [AFTER]] (./Images/image_003.png)
