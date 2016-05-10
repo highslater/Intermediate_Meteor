@@ -193,10 +193,12 @@ Setting up our project structure and what impact that has on the files within gi
 
 ######Folder Structure [BEFORE]  
 ![Folder Structure [BEFORE] ] (./Images/image_002.png "Folder Structure [BEFORE]") 
- 
+
 ######Folder Structure [AFTER]  
 ![Folder Structure [AFTER]] (./Images/image_003.png "Folder Structure [AFTER]")
 
+
+###Tutorial #4 - Basic Layouts with FlowRouter:  
 
 
 
