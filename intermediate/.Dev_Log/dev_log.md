@@ -164,8 +164,8 @@ kadira:blaze-layout     # Layout Manager for Blaze (works well with FlowRouter)
 erasaur:meteor-lodash       # Wrapper for Lo-Dash v4.0.0
 stolinski:stylus-multi      # Stylus, w/ Nib, Rupture, Axis and PostCSS with Lost & Rucksack
 fortawesome:fontawesome     # Font Awesome (official): 500+ scalable vector icons, customizable via CSS, Retina friendly
-spiderable            # Makes the application crawlable to web spiders
-fastclick              # Faster touch events on mobile
+spiderable                # Makes the application crawlable to web spiders
+fastclick                   # Faster touch events on mobile
 raix:handlebar-helpers      # Handlebar helpers
 aldeed:collection2            # Automatic validation of insert and update operations on the client and server.
 aldeed:autoform     # Easily create forms with automatic insert and update, and automatic reactive validation.
