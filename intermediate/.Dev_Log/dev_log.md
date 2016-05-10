@@ -170,7 +170,7 @@ Setting up our project structure and what impact that has on the files within gi
 
 ######Folder Structure [BEFORE]  
 
-![Folder Structure [BEFORE] ] (./Images/image_002.png "*image annotation would be nice*")  
+![Folder Structure [BEFORE] ] (./Images/image_002.png "image annotation would be nice")  
    
 ___  
 ---  
