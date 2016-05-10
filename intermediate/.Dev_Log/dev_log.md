@@ -286,5 +286,7 @@ FlowRouter.route('/test', {
 
 ```
 
+######Web Output of [ '/' ] :  
 
+![Web Output of [ '/' ]] (./Images/image_004.png "Web Output of [ '/' ]")
 
