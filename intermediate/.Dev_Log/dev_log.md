@@ -1,3 +1,13 @@
+___  
+---  
+***  
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
+
+<kbd>File Names?</kbd>
+
+~~strike throughs~~
+
+
 ##Intermediate Meteor Tutorial
 #####Notes:  
 Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
@@ -184,15 +194,6 @@ Setting up our project structure and what impact that has on the files within gi
 ######Folder Structure [BEFORE] 
 
 ![Folder Structure [BEFORE] ] (./Images/image_002.png "Folder Structure [BEFORE]")  
-   
-___  
----  
-***  
-<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
-
-<kbd>File Names?</kbd>
-
-~~strike throughs~~
 
 ######Folder Structure [AFTER]  
 
