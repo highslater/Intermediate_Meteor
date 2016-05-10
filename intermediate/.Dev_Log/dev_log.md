@@ -1,5 +1,5 @@
 #Table of Contents  
-*[Tutorial #1 - Project Introduction] (#Tutorial_1)
+[Tutorial #1 - Project Introduction] (#Tutorial_1)
 
 
 
@@ -18,7 +18,8 @@ ___
 #####Notes:  
 Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
 In this series we are going to be exploring some of the packages and techniques that you will encounter in making web applications with Meteor. 
-###Tutorial #1 - Project Introduction: <a id="Tutorial_1"></a>
+###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
+
 Here I introduce the project we'll be creating in this series.
 ###Tutorial #2 - Package Management:  
 Published on Oct 14, 2015  
