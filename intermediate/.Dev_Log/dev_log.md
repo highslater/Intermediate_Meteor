@@ -1,4 +1,6 @@
-#Table of Contents  
+#Dev_Log
+
+##Table of Contents  
 [Tutorial #1 - Project Introduction] (#Tutorial_1)  
 [Tutorial #2 - Package Management] (#Tutorial_2)  
 [Tutorial #3 - Project Structure] (#Tutorial_3)  
