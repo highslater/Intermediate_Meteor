@@ -1,5 +1,5 @@
 #Dev_Log  
-##Intermediate Meteor Tutorial
+###Intermediate Meteor Tutorial
 #####Notes: Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
 
 ##Table of Contents  
