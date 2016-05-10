@@ -1,4 +1,10 @@
+#Table of Contents  
+*[Tutorial #1 - Project Introduction] (#Tutorial #1 - Project Introduction)
+
+
+
 ___  
+
 ---  
 ***  
 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
@@ -12,7 +18,7 @@ ___
 #####Notes:  
 Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
 In this series we are going to be exploring some of the packages and techniques that you will encounter in making web applications with Meteor. 
-###Tutorial #1 - Project Introduction: 
+###Tutorial #1 - Project Introduction: <a id="Tutorial #1 - Project Introduction"
 Here I introduce the project we'll be creating in this series.
 ###Tutorial #2 - Package Management:  
 Published on Oct 14, 2015  
@@ -297,7 +303,7 @@ FlowRouter.route('/test', {
 ###Tutorial #6 - Defining A Schema In Meteor: 
 
 ######intermediate/collections/Recipes.js  
- 
+
 ```JavaScript  
 
 Recipes = new Meteor.Collection('recipes');
@@ -333,6 +339,9 @@ RecipeSchema = new SimpleSchema({
 Recipes.attachSchema(RecipeSchema);
 
 ```
+
+###Tutorial #7 - Easy Forms With AutoForm in Meteor:  
+
 
 
 
