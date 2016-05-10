@@ -22,10 +22,10 @@ ___
 #####Notes:  
 Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
 In this series we are going to be exploring some of the packages and techniques that you will encounter in making web applications with Meteor. 
-###<a id="Tutorial_2"></a>Tutorial #1 - Project Introduction:  
+###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
 
 Here I introduce the project we'll be creating in this series.
-###<a id="Tutorial_1"></a>Tutorial #2 - Package Management:  
+###<a id="Tutorial_2"></a>Tutorial #2 - Package Management:  
 Published on Oct 14, 2015  
 In this Intermediate Meteor video tutorial we get our project started!! I then talk a bit about how to easily add packages and what some of those packages are. 
 
