@@ -1,11 +1,11 @@
 #Table of Contents  
 [Tutorial #1 - Project Introduction] (#Tutorial_1)  
-[Tutorial #2 - Project Introduction] (#Tutorial_2)  
-[Tutorial #3 - Project Introduction] (#Tutorial_3)  
-[Tutorial #4 - Project Introduction] (#Tutorial_4)  
-[Tutorial #5 - Project Introduction] (#Tutorial_5)  
-[Tutorial #6 - Project Introduction] (#Tutorial_6)  
-[Tutorial #7 - Project Introduction] (#Tutorial_7)  
+[Tutorial #2 - Package Management] (#Tutorial_2)  
+[Tutorial #3 - Project Structure] (#Tutorial_3)  
+[Tutorial #4 - Basic Layouts with FlowRouter] (#Tutorial_4)  
+[Tutorial #5 - Basic Routing With Layouts in Meteor] (#Tutorial_5)  
+[Tutorial #6 - Defining A Schema In Meteor] (#Tutorial_6)  
+[Tutorial #7 - Easy Forms With AutoForm in Meteor] (#Tutorial_7)  
 [Tutorial #8 - Project Introduction] (#Tutorial_8)
 
 
