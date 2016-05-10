@@ -89,7 +89,7 @@ msavin:jetsetter
 zimme:active-route  
 gwendall:auth-client-callbacks  
 
-If anyone is getting an error after adding these packages, adding another package called 'check' appears to have fixed this (at least for now).  
+#####If anyone is getting an error after adding these packages, adding another package called 'check' appears to have fixed this (at least for now).  
 ```Console  
 
 @mint64 ~/Intermediate_Meteor/intermediate 
