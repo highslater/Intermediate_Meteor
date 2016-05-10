@@ -1,4 +1,5 @@
 #Dev_Log
+Intermediate Meteor Tutorial
 
 ##Table of Contents  
 [Tutorial #1 - Project Introduction] (#Tutorial_1)  
