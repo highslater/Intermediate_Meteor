@@ -172,7 +172,7 @@ accounts-password       # Password support for accounts
 matb33:bootstrap-glyphicons     # Bootstrap 3.3.4: glyphicons
 msavin:jetsetter        # In-App Session Editor 
 zimme:active-route      # Active route helpers
-gwendall:auth-client-callbacks      # Adds client-side onLogin and onLogout methods
+gwendall:auth-client-callbacks  # Adds client-side onLogin and onLogout methods
 
 ```
 
