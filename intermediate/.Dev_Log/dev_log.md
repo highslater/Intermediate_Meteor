@@ -168,7 +168,7 @@ kadira:flow-router      # Carefully Designed Client Side Router for Meteor
 
 Setting up our project structure and what impact that has on the files within given directories
 
-<kbd>Folder Structure [BEFORE]</kbd> 
+######Folder Structure [BEFORE] 
 
 ![Folder Structure [BEFORE] ] (./Images/image_002.png "Folder Structure [BEFORE]")  
    
