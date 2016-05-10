@@ -179,7 +179,7 @@ ___
 
 <kbd>File Names?</kbd>
 
-~~ strike throughs ~~
+~~strike throughs~~
 
 ######Folder Structure [AFTER]  
 
