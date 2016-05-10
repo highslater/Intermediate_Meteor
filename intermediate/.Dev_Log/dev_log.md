@@ -1,4 +1,9 @@
-#Dev_Log
+#Dev_Log  
+##Intermediate Meteor Tutorial
+#####Notes:  
+Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
+In this series we are going to be exploring some of the packages and techniques that you will encounter in making web applications with Meteor. 
+
 
 ##Table of Contents  
 [Tutorial #1 - Project Introduction] (#Tutorial_1)  
@@ -10,24 +15,6 @@
 [Tutorial #7 - Easy Forms With AutoForm in Meteor] (#Tutorial_7)  
 [Tutorial #8 - Project Introduction] (#Tutorial_8)
 
-
-
-
-___  
-
----  
-***  
-<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
-
-<kbd>File Names?</kbd>
-
-~~strike throughs~~
-
-
-##Intermediate Meteor Tutorial
-#####Notes:  
-Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
-In this series we are going to be exploring some of the packages and techniques that you will encounter in making web applications with Meteor. 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
 
 Here I introduce the project we'll be creating in this series.
