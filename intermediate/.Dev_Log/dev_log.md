@@ -1,5 +1,9 @@
 #Table of Contents  
-[Tutorial #1 - Project Introduction] (#Tutorial_1)
+[Tutorial #1 - Project Introduction] (#Tutorial_1)  
+[Tutorial #2 - Project Introduction] (#Tutorial_2)  
+[Tutorial #3 - Project Introduction] (#Tutorial_3)  
+[Tutorial #4 - Project Introduction] (#Tutorial_4)
+
 
 
 
@@ -21,7 +25,7 @@ In this series we are going to be exploring some of the packages and techniques 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
 
 Here I introduce the project we'll be creating in this series.
-###Tutorial #2 - Package Management:  
+###<a id="Tutorial_2"></a>Tutorial #2 - Package Management:  
 Published on Oct 14, 2015  
 In this Intermediate Meteor video tutorial we get our project started!! I then talk a bit about how to easily add packages and what some of those packages are. 
 
@@ -194,7 +198,7 @@ gwendall:auth-client-callbacks  # Adds client-side onLogin and onLogout methods
 ```
 
 
-###Tutorial #3 - Project Structure:  
+###<a id="Tutorial_3"></a>Tutorial #3 - Project Structure:  
 
 Setting up our project structure and what impact that has on the files within given directories
 
@@ -205,7 +209,7 @@ Setting up our project structure and what impact that has on the files within gi
 ![Folder Structure [AFTER]] (./Images/image_003.png "Folder Structure [AFTER]")
 
 
-###Tutorial #4 - Basic Layouts with FlowRouter:  
+###<a id="Tutorial_4"></a>Tutorial #4 - Basic Layouts with FlowRouter:  
 
 ######intermediate/client/main.html  
 
