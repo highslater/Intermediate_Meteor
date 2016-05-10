@@ -170,11 +170,11 @@ Setting up our project structure and what impact that has on the files within gi
 
 ######Folder Structure [BEFORE]  
 
-![] (./Images/image_002.png)  
+![Folder Structure [BEFORE] ] (./Images/image_002.png)  
 
 ######Folder Structure [AFTER]  
 
-![] (./Images/image_003.png)
+![Folder Structure [AFTER]] (./Images/image_003.png)
 
 
 
