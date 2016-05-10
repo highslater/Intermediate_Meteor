@@ -212,7 +212,7 @@ Setting up our project structure and what impact that has on the files within gi
 
 ######intermediate/client/layouts/HomeLayout.html  
 
-```
+```HTML
 
 <template name="HomeLayout">
     <header>
@@ -230,7 +230,7 @@ Setting up our project structure and what impact that has on the files within gi
 
 ######intermediate/client/layouts/MainLayout.html  
 
-```
+```HTML
 
 <template name="MainLayout">
     <header>
