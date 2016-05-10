@@ -177,6 +177,8 @@ ___
 ***  
 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
 
+<kbd>File Names?</kbd>
+
 ######Folder Structure [AFTER]  
 
 ![Folder Structure [AFTER]] (./Images/image_003.png)
