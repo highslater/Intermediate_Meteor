@@ -2,7 +2,11 @@
 [Tutorial #1 - Project Introduction] (#Tutorial_1)  
 [Tutorial #2 - Project Introduction] (#Tutorial_2)  
 [Tutorial #3 - Project Introduction] (#Tutorial_3)  
-[Tutorial #4 - Project Introduction] (#Tutorial_4)
+[Tutorial #4 - Project Introduction] (#Tutorial_4)  
+[Tutorial #5 - Project Introduction] (#Tutorial_5)  
+[Tutorial #6 - Project Introduction] (#Tutorial_6)  
+[Tutorial #7 - Project Introduction] (#Tutorial_7)  
+[Tutorial #8 - Project Introduction] (#Tutorial_8)
 
 
 
@@ -255,7 +259,7 @@ Setting up our project structure and what impact that has on the files within gi
 ```
 
 
-###Tutorial #5 - Basic Routing With Layouts in Meteor:  
+###<a id="Tutorial_5"></a>Tutorial #5 - Basic Routing With Layouts in Meteor:  
 
 ######intermediate/lib/routes.js  
 
@@ -305,7 +309,7 @@ FlowRouter.route('/test', {
 
 ![Web Output of [ '/test' ]] (./Images/image_004.png "Web Output of [ '/test' ]")
 
-###Tutorial #6 - Defining A Schema In Meteor: 
+###<a id="Tutorial_6"></a>Tutorial #6 - Defining A Schema In Meteor: 
 
 ######intermediate/collections/Recipes.js  
 
@@ -345,7 +349,7 @@ Recipes.attachSchema(RecipeSchema);
 
 ```
 
-###Tutorial #7 - Easy Forms With AutoForm in Meteor:  
+###<a id="Tutorial_7"></a>Tutorial #7 - Easy Forms With AutoForm in Meteor:  
 
 
 
