@@ -246,14 +246,45 @@ Setting up our project structure and what impact that has on the files within gi
 
 ###Tutorial #5 - Basic Routing With Layouts in Meteor:  
 
+######intermediate/lib/routes.js  
+
+```JavaScript  
+
+FlowRouter.route('/', {
+    name: 'home',
+    action() {
+        BlazeLayout.render('HomeLayout');
+    }, // end of action
+}); // end of FlowRouter.route
+
+FlowRouter.route('/test', {
+    name: 'test',
+    action() {
+        BlazeLayout.render('MainLayout', { main: 'Test' });
+    }, // end of action
+}); // end of FlowRouter.route
+
+```
 
 
 
+######intermediate/client/layouts/MainLayout.html  
 
+```JavaScript  
 
+<template name="MainLayout">
+    <header>
+        <h1>My Recipe Book</h1> {{> loginButtons}}
+    </header>
+    <main>
+        {{> Template.dynamic template=main}}
+    </main>
+</template>
+<Template name="Test">
+    HELLO !
+</Template>
 
-
-
+```
 
 
 
