@@ -175,7 +175,7 @@ Setting up our project structure and what impact that has on the files within gi
 ___  
 ---  
 ***  
-
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd>
 
 ######Folder Structure [AFTER]  
 
