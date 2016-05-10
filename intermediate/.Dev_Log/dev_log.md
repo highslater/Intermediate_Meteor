@@ -191,12 +191,9 @@ gwendall:auth-client-callbacks  # Adds client-side onLogin and onLogout methods
 
 Setting up our project structure and what impact that has on the files within given directories
 
-######Folder Structure [BEFORE] 
-
-![Folder Structure [BEFORE] ] (./Images/image_002.png "Folder Structure [BEFORE]")  
-
+######Folder Structure [BEFORE]  
+![Folder Structure [BEFORE] ] (./Images/image_002.png "Folder Structure [BEFORE]")
 ######Folder Structure [AFTER]  
-
 ![Folder Structure [AFTER]] (./Images/image_003.png "Folder Structure [AFTER]")
 
 
