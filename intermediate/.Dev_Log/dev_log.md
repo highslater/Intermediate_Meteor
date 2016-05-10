@@ -288,5 +288,9 @@ FlowRouter.route('/test', {
 
 ######Web Output of [ '/' ] :  
 
-![Web Output of [ '/' ]] (./Images/image_004.png "Web Output of [ '/' ]")
+![Web Output of [ '/' ]] (./Images/image_004.png "Web Output of [ '/' ]")  
+
+######Web Output of [ '/test' ] :  
+
+![Web Output of [ '/test' ]] (./Images/image_004.png "Web Output of [ '/test' ]")
 
