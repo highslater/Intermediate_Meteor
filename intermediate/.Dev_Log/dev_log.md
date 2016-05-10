@@ -159,7 +159,7 @@ standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
-kadira:flow-router  # Carefully Designed Client Side Router for Meteor
+kadira:flow-router      # Carefully Designed Client Side Router for Meteor
 kadira:blaze-layout     # Layout Manager for Blaze (works well with FlowRouter)
 erasaur:meteor-lodash       # Wrapper for Lo-Dash v4.0.0
 stolinski:stylus-multi      # Stylus, w/ Nib, Rupture, Axis and PostCSS with Lost & Rucksack
