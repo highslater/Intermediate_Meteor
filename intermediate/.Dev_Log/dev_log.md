@@ -200,12 +200,48 @@ Setting up our project structure and what impact that has on the files within gi
 
 ###Tutorial #4 - Basic Layouts with FlowRouter:  
 
+######intermediate/client/main.html  
+
+```HTML
+
+<head>
+    <title>simple</title>
+</head>
+
+```
+
+######intermediate/client/layouts/HomeLayout.html  
+
+```
+
+<template name="HomeLayout">
+    <header>
+        <h1>My Recipe Book</h1> {{> loginButtons}}
+    </header>
+    <main>
+        <div class="billboard">
+            <h2>Organize Your Meals</h2>
+        </div>
+    </main>
+</template>
+
+```
 
 
+######intermediate/client/layouts/MainLayout.html  
 
+```
 
+<template name="MainLayout">
+    <header>
+        <h1>My Recipe Book</h1> {{> loginButtons}}
+    </header>
+    <main>
+        {{> Template.dynamic template=main}}
+    </main>
+</template>
 
-
+```
 
 
 
