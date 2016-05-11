@@ -189,8 +189,8 @@ gwendall:auth-client-callbacks  # Adds client-side onLogin and onLogout methods
 
 
 ###<a id="Tutorial_3"></a>Tutorial #3 - Project Structure:  
-
-Setting up our project structure and what impact that has on the files within given directories
+Published on Oct 14, 2015  
+In this video, I talk about setting up our project structure and what impact that has on the files within given directories.
 
 ######Folder Structure [BEFORE]  
 ![Folder Structure [BEFORE] ] (./Images/image_002.png "Folder Structure [BEFORE]") 
@@ -200,6 +200,8 @@ Setting up our project structure and what impact that has on the files within gi
 
 
 ###<a id="Tutorial_4"></a>Tutorial #4 - Basic Layouts with FlowRouter:  
+Published on Oct 19, 2015  
+In this video, I talk about creating our layouts for our routing in the next episode.
 
 ######intermediate/client/main.html  
 
@@ -245,7 +247,10 @@ Setting up our project structure and what impact that has on the files within gi
 ```
 
 
-###<a id="Tutorial_5"></a>Tutorial #5 - Basic Routing With Layouts in Meteor:  
+###<a id="Tutorial_5"></a>Tutorial #5 - Basic Routing With Layouts in Meteor: 
+Published on Oct 19, 2015  
+In this video, I talk about using FlowRouter and Blaze Layouts to create some  
+basic routes to get us going. 
 
 ######intermediate/lib/routes.js  
 
@@ -296,6 +301,9 @@ FlowRouter.route('/test', {
 ![Web Output of [ '/test' ]] (./Images/image_004.png "Web Output of [ '/test' ]")
 
 ###<a id="Tutorial_6"></a>Tutorial #6 - Defining A Schema In Meteor: 
+Published on Oct 26, 2015  
+In this Intermediate Meteor video tutorial, I show you how to define a schema  
+using Simple Schema and Collection2.
 
 ######intermediate/collections/Recipes.js  
 
@@ -335,7 +343,11 @@ Recipes.attachSchema(RecipeSchema);
 
 ```
 
-###<a id="Tutorial_7"></a>Tutorial #7 - Easy Forms With AutoForm in Meteor:  
+###<a id="Tutorial_7"></a>Tutorial #7 - Easy Forms With AutoForm in Meteor: 
+Published on Oct 26, 2015  
+In this Intermediate Meteor video tutorial, I talk about using FlowRouter and Blaze Layouts  
+to create some basic routes to get us going.
+
 
 ######intermediate/lib/routes.js  
 
@@ -443,7 +455,10 @@ Recipes.attachSchema(RecipeSchema);
 ![Web Output [/recipe-book] ] (./Images/image_006.png "Web Output [/recipe-book] ")
 
 
-###<a id="Tutorial_8"></a>Tutorial #8 - Insert Permissions, Publishing & Meteor Toys:
+###<a id="Tutorial_8"></a>Tutorial #8 - Insert Permissions, Publishing & Meteor Toys:  
+Published on Oct 26, 2015  
+In this Intermediate Meteor video tutorial, I talk about adding allow permissions, publishing and subscribing and Meteor  
+Toys a tool for seeing your information.
 
 
 
