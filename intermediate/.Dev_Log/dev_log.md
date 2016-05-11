@@ -10,7 +10,7 @@
 [Tutorial #5 - Basic Routing With Layouts in Meteor] (#Tutorial_5)  
 [Tutorial #6 - Defining A Schema In Meteor] (#Tutorial_6)  
 [Tutorial #7 - Easy Forms With AutoForm in Meteor] (#Tutorial_7)  
-[Tutorial #8 - Project Introduction] (#Tutorial_8)
+[Tutorial #8 - Insert Permissions, Publishing & Meteor Toys] (#Tutorial_8)
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
 
@@ -443,7 +443,7 @@ Recipes.attachSchema(RecipeSchema);
 ![Web Output [/recipe-book] ] (./Images/image_006.png "Web Output [/recipe-book] ")
 
 
-
+###<a id="Tutorial_8"></a>Tutorial #8 - Insert Permissions, Publishing & Meteor Toys:
 
 
 
