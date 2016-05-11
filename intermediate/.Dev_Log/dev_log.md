@@ -337,9 +337,110 @@ Recipes.attachSchema(RecipeSchema);
 
 ###<a id="Tutorial_7"></a>Tutorial #7 - Easy Forms With AutoForm in Meteor:  
 
+######intermediate/lib/routes.js  
 
+```JavaScript  
 
+FlowRouter.route('/', {
+    name: 'home',
+    action() {
+        BlazeLayout.render('HomeLayout');
+    }, // end of action
+}); // end of FlowRouter.route
 
+FlowRouter.route('/recipe-book', {
+    name: 'recipe-book',
+    action() {
+        BlazeLayout.render('MainLayout', { main: 'Recipes' });
+    }, // end of action
+}); // end of FlowRouter.route
+
+```
+
+######intermediate/client/recipes/Recipes.html  
+
+```HTML  
+
+<template name="Recipes">
+    {{> NewRecipe}}
+</template>
+
+```
+
+######intermediate/client/recipes/NewRecipe.html  
+
+```HTML  
+
+<template name="NewRecipe">
+    <div class="new-recipe-container">
+        {{> quickForm collection="Recipes" id="insertRecipeForm" type="insert" class="new-recipe-form"}}
+    </div>
+</template>
+
+```
+
+######intermediate/collections/Recipes.js  
+
+```JavaScript  
+
+Recipes = new Meteor.Collection('recipes');
+
+RecipeSchema = new SimpleSchema({
+    name: {
+        type: String,
+        label: "Name",
+    }, // end of name
+
+    desc: {
+        type: String,
+        label: "Description",
+    }, // end of desc
+
+    author: {
+        type: String,
+        label: "Author",
+        autoValue: function() {
+            return this.userId
+        }, // end of autoValue
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of author
+
+    createdAt: {
+        type: Date,
+        label: "Created At",
+        autoValue: function() {
+            return new Date();
+        }, // end of autoValue
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of createdAt
+}); // end of RecipeSchema
+
+Recipes.attachSchema(RecipeSchema);
+
+```
+
+######intermediate/client/layouts/MainLayout.html  
+
+```HTML  
+
+<template name="MainLayout">
+    <header>
+        <h1>My Recipe Book</h1> {{> loginButtons}}
+    </header>
+    <main>
+        {{> Template.dynamic template=main}}
+    </main>
+</template>
+
+```
+
+######Web Output [/recipe-book]  
+
+![Web Output [/recipe-book] ] (./Images/image_006.png "Web Output [/recipe-book] ")
 
 
 
