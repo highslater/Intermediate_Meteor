@@ -595,7 +595,8 @@ Recipes.attachSchema(RecipeSchema);
 
 ###<a id="Tutorial_9"></a>Tutorial #9 - Sub-documents & Array Fields:  
 
-Published on Oct 28, 2015  
+Published on Oct 28, 2015 
+--- 
 In this Intermediate Meteor video tutorial,  
 I talk about completing our schema by using sub-documents and array fields.  
 
