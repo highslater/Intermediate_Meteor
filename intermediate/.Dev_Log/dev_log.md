@@ -730,7 +730,45 @@ datariot:ganalytics: Publish pageviews and events to Google Analytics using the 
 ```
 
 
+######intermediate/settings.json  
 
+```Json 
+
+{
+    "public": {
+        "ga": {
+            "account": "UA-XXXXXXXX-X"
+        }
+    },
+    "private": {
+
+    }
+}
+
+```
+
+
+######intermediate/lib/routes.js  
+
+```JavaScript  
+
+FlowRouter.route('/', {
+    name: 'home',
+    action() {
+        GAnalytics.pageview();
+        BlazeLayout.render('HomeLayout');
+    }, // end of action
+}); // end of FlowRouter.route
+
+FlowRouter.route('/recipe-book', {
+    name: 'recipe-book',
+    action() {
+        GAnalytics.pageview();
+        BlazeLayout.render('MainLayout', { main: 'Recipes' });
+    }, // end of action
+}); // end of FlowRouter.route
+
+```
 
 
 
