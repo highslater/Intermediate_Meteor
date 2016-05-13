@@ -12,7 +12,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #6 - Defining A Schema In Meteor] (#Tutorial_6)  
 [Tutorial #7 - Easy Forms With AutoForm in Meteor] (#Tutorial_7)  
 [Tutorial #8 - Insert Permissions, Publishing & Meteor Toys] (#Tutorial_8)  
-[Tutorial #9 - Sub-documents & Array Fields] (#Tutorial_9)
+[Tutorial #9 - Sub-documents & Array Fields] (#Tutorial_9)  
+[Tutorial #10 - Private & Public Settings and Google Analytics] (#Tutorial_10)
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
 
@@ -671,5 +672,9 @@ Recipes.attachSchema(RecipeSchema);
 
 ```
 
+###<a id="Tutorial_10"></a>Tutorial #10 - Private & Public Settings and Google Analytics:  
 
-
+Published on Oct 28, 2015  
+In this Intermediate Meteor video tutorial,  
+I talk about creating and using a settings.json file to store private or public settings.  
+We also set up Google Analytics for our routing.
