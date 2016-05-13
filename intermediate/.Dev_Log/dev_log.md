@@ -771,47 +771,6 @@ FlowRouter.route('/recipe-book', {
 ```
 
 
-######intermediate/.meteor/packages  
-
-```  
-# Meteor packages used by this project, one per line.
-# Check this file (and the other files in this directory) into your repository.
-#
-# 'meteor add' and 'meteor remove' will edit this file for you,
-# but you can also edit it by hand.
-
-meteor-base             # Packages every Meteor app needs to have
-mobile-experience       # Packages for a great mobile UX
-mongo                   # The database Meteor supports right now
-blaze-html-templates    # Compile .html files into Meteor Blaze views
-reactive-var            # Reactive variable for tracker
-jquery                  # Helpful client-side library
-tracker                 # Meteor's client-side reactive programming library
-
-standard-minifier-css   # CSS minifier run for production mode
-standard-minifier-js    # JS minifier run for production mode
-es5-shim                # ECMAScript 5 compatibility for older browsers.
-ecmascript              # Enable ECMAScript2015+ syntax in app code
-
-kadira:flow-router      # Carefully Designed Client Side Router for Meteor
-kadira:blaze-layout     # Layout Manager for Blaze (works well with FlowRouter)
-erasaur:meteor-lodash      # Wrapper for Lo-Dash v4.0.0
-stolinski:stylus-multi      # Stylus, w/ Nib, Rupture, Axis and PostCSS with Lost & Rucksack
-fortawesome:fontawesome     # Font Awesome (official): 500+ scalable vector icons, customizable via CSS, Retina friendly
-spiderable                 # Makes the application crawlable to web spiders
-fastclick                     # Faster touch events on mobile
-raix:handlebar-helpers      # Handlebar helpers
-aldeed:collection2      # Automatic validation of insert and update operations on the client and server.
-aldeed:autoform      # Easily create forms with automatic insert and update, and automatic reactive validation.
-accounts-ui              # Simple templates to add login widgets to an app
-accounts-password       # Password support for accounts
-matb33:bootstrap-glyphicons     # Bootstrap 3.3.4: glyphicons
-zimme:active-route      # Active route helpers
-gwendall:auth-client-callbacks      # Adds client-side onLogin and onLogout methods
-meteortoys:allthings        # Insanely Handy Development Tools
-datariot:ganalytics     # Publish pageviews and events to Google Analytics using the new analytics.js code.
-
-```
 
 
 
