@@ -1,10 +1,19 @@
-Recipes = new Meteor.Collection('recipes');
+Recipes = new Mongo.Collection('recipes');
 
 Recipes.allow({
     insert: function(userId, doc) {
         return !!userId;
     }, // end of insert
 }); // end of Recipes.allow
+
+Ingredient = new SimpleSchema({
+    name: {
+        type: String
+    }, // end of name
+    amount: {
+        type: String
+    }, // end of amount
+}); // end of Ingredient
 
 RecipeSchema = new SimpleSchema({
     name: {
@@ -17,6 +26,19 @@ RecipeSchema = new SimpleSchema({
         label: "Description",
     }, // end of desc
 
+    ingredients: {
+        type: [Ingredient]
+    }, // end of ingredients
+
+    inMenu: {
+        type: Boolean,
+        defaultValue: false,
+        optional: true,
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of inMenu
+
     author: {
         type: String,
         label: "Author",
@@ -24,7 +46,7 @@ RecipeSchema = new SimpleSchema({
             return this.userId
         }, // end of autoValue
         autoform: {
-            type: "hidden",
+            type: "hidden", // leave out " " and => (STDERR) ReferenceError: hidden is not defined
         }, // end of autoform
     }, // end of author
 
