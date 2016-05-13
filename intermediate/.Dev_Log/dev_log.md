@@ -678,3 +678,38 @@ Published on Oct 28, 2015
 In this Intermediate Meteor video tutorial,  
 I talk about creating and using a settings.json file to store private or public settings.  
 We also set up Google Analytics for our routing.
+
+
+######Console Output:  
+
+```Console  
+
+@mint64 ~/Intermediate_Meteor/intermediate 
+$ meteor --settings settings.json
+
+[[[[[ ~/Programming/Meteor/LevelUpTuts/Intermediate_Meteor/intermediate ]]]]]
+
+=> Started proxy.                             
+=> Started MongoDB.                           
+=> Started your app.                          
+                                              
+=> App running at: http://localhost:3000/  
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
