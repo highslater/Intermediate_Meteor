@@ -705,8 +705,29 @@ settings.json
 
 ```
 
+######Console Output:  
 
+```Console  
 
+@mint64 ~/intermediate 
+$ meteor search ganalytics
+
+Matching packages:                            
+datariot:ganalytics    Publish pageviews and events to Google Analytics using...
+indesign:ganalytics    Log page views and events to Google Analytics.
+laboratory:ganalytics  Publish pageviews and events to Google Analytics using...
+shadowsyc:ganalytics   Adding support for user_id tracking
+
+You can use 'meteor show' to get more information on a specific item.
+
+@mint64 ~/intermediate 
+$ meteor add datariot:ganalytics
+
+Changes to your project's package version selections:                                            
+datariot:ganalytics  added, version 0.2.1                                                 
+datariot:ganalytics: Publish pageviews and events to Google Analytics using the new analytics.js code.
+
+```
 
 
 
