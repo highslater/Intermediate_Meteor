@@ -1,5 +1,11 @@
 Recipes = new Meteor.Collection('recipes');
 
+Recipes.allow({
+    insert: function(userId, doc) {
+        return !!userId;
+    }, // end of insert
+}); // end of Recipes.allow
+
 RecipeSchema = new SimpleSchema({
     name: {
         type: String,

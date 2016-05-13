@@ -1,6 +1,7 @@
 #Dev_Log  
 ###Intermediate Meteor Tutorial
-#####Notes: Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log, contact list, chat app, 
+#####Notes: Recipe Book, Caloric Log, Exercise Log, ToDo Log , weightlifting log , study log, work log,  
+contact list, chat app, checking/savings account, expense account,
 
 ##Table of Contents  
 [Tutorial #1 - Project Introduction] (#Tutorial_1)  
@@ -459,6 +460,141 @@ Recipes.attachSchema(RecipeSchema);
 Published on Oct 26, 2015  
 In this Intermediate Meteor video tutorial, I talk about adding allow permissions, publishing and subscribing and Meteor  
 Toys a tool for seeing your information.
+
+```Console
+@mint64 ~/Intermediate_Meteor/intermediate 
+$ meteor add meteortoys:allthings
+                                                                                
+Changes to your project's package version selections:
+                                              
+meteortoys:allthings     added, version 3.0.0 
+meteortoys:authenticate  added, version 3.0.0
+meteortoys:autopub       added, version 3.0.0
+meteortoys:blueprint     added, version 3.0.0
+meteortoys:email         added, version 3.0.0
+meteortoys:hotreload     added, version 3.0.0
+meteortoys:listen        added, version 3.0.0
+meteortoys:method        added, version 3.0.4
+meteortoys:pub           added, version 3.0.4
+meteortoys:result        added, version 3.0.0
+meteortoys:shell         added, version 3.0.0
+meteortoys:status        added, version 3.0.0
+meteortoys:sub           added, version 3.0.0
+meteortoys:throttle      added, version 3.0.0
+msavin:mongol            added, version 2.0.1
+                                          
+meteortoys:allthings: Insanely Handy Development Tools
+
+@mint64 ~/Programming/Meteor/Lintermediate 
+$ meteor remove msavin:jetsetter
+msavin:jetsetter: removed dependency  
+
+@mint64 ~/Intermediate_Meteor/intermediate 
+$ meteor list
+
+accounts-password               1.1.8  Password support for accounts
+accounts-ui                     1.1.9  Simple templates to add login widgets ...
+aldeed:autoform                 5.8.1  Easily create forms with automatic ins...
+aldeed:collection2              2.9.1  Automatic validation of insert and upd...
+blaze-html-templates            1.0.4  Compile HTML templates into reactive U...
+ecmascript                      0.4.3  Compiler plugin that supports ES2015+ ...
+erasaur:meteor-lodash           4.0.0  Wrapper for Lo-Dash v4.0.0
+es5-shim                        4.5.10  Shims and polyfills to improve ECMASc...
+fastclick                       1.0.11  Faster touch events on mobile
+fortawesome:fontawesome         4.5.0  Font Awesome (official): 500+ scalable...
+gwendall:auth-client-callbacks  0.1.0  Adds client-side onLogin and onLogout ...
+jquery                          1.11.8  Manipulate the DOM using CSS selectors
+kadira:blaze-layout             2.3.0  Layout Manager for Blaze (works well w...
+kadira:flow-router              2.12.1  Carefully Designed Client Side Router...
+matb33:bootstrap-glyphicons     10.0.0  Bootstrap 3.3.4: glyphicons
+meteor-base                     1.0.4  Packages that every Meteor app needs
+meteortoys:allthings            3.0.0  Insanely Handy Development Tools
+mobile-experience               1.0.4  Packages for a great mobile user exper...
+mongo                           1.1.7  Adaptor for using MongoDB and Minimong...
+raix:handlebar-helpers          0.2.5  Handlebar helpers
+reactive-var                    1.0.9  Reactive variable
+spiderable                      1.0.13  Makes the application crawlable to we...
+standard-minifier-css           1.0.6  Standard css minifier used with Meteor...
+standard-minifier-js            1.0.6  Standard javascript minifiers used wit...
+stolinski:stylus-multi          1.4.3  Stylus, w/ Nib, Rupture, Axis and Post...
+tracker                         1.0.13  Dependency tracker to allow reactive ...
+zimme:active-route              2.3.2  Active route helpers
+
+```
+
+
+######intermediate/server/publish.js  
+
+```JavaScript  
+
+Meteor.publish('recipes', function() {
+    return Recipes.find({ author: this.userId })
+}); // end of Meteor.publish
+
+```
+
+######intermediate/client/recipes/Recipes.js  
+
+
+```JavaScript  
+
+Meteor.subscribe('recipes', );
+
+```
+
+######intermediate/collecyions/Recipes.js  
+
+```JavaScript  
+
+Recipes = new Meteor.Collection('recipes');
+
+Recipes.allow({
+    insert: function(userId, doc) {
+        return !!userId;
+    }, // end of insert
+}); // end of Recipes.allow
+
+RecipeSchema = new SimpleSchema({
+    name: {
+        type: String,
+        label: "Name",
+    }, // end of name
+
+    desc: {
+        type: String,
+        label: "Description",
+    }, // end of desc
+
+    author: {
+        type: String,
+        label: "Author",
+        autoValue: function() {
+            return this.userId
+        }, // end of autoValue
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of author
+
+    createdAt: {
+        type: Date,
+        label: "Created At",
+        autoValue: function() {
+            return new Date();
+        }, // end of autoValue
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of createdAt
+}); // end of RecipeSchema
+
+Recipes.attachSchema(RecipeSchema);
+
+```
+
+
+
+
 
 
 
