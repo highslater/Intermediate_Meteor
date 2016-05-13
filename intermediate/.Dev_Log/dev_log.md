@@ -697,8 +697,14 @@ $ meteor --settings settings.json
 
 ```
 
+######intermediate/.gitignore  
 
+```Text  
 
+node_modules/
+settings.json
+
+```
 
 
 
