@@ -14,6 +14,7 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #8 - Insert Permissions, Publishing & Meteor Toys] (#Tutorial_8)  
 [Tutorial #9 - Sub-documents & Array Fields] (#Tutorial_9)  
 [Tutorial #10 - Private & Public Settings and Google Analytics] (#Tutorial_10)
+[Tutorial #11 - Creating Partials and Adding Styles] (#Tutorial_11)
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
 
@@ -771,8 +772,7 @@ FlowRouter.route('/recipe-book', {
 ```
 
 
-
-
-
-
-
+###<a id="Tutorial_11"></a>Tutorial #11 - Creating Partials and Adding Styles:  
+Published on Oct 28, 2015  
+In this Intermediate Meteor video tutorial,  
+we add styles and create the navigation for our site.
