@@ -831,12 +831,10 @@ we add styles and create the navigation for our site.
 
 ```HTML  
 
-<template name="HomeLayout">
-    {{> Header}}
-    <main>
-        <div class="billboard">
-            <h2>Organize Your Meals</h2>
-        </div>
+<template name="MainLayout">
+    {{> Header}} {{> SideNav}}
+    <main class="main-layout">
+        {{> Template.dynamic template=main}}
     </main>
 </template>
 
