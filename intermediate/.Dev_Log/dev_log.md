@@ -832,7 +832,8 @@ we add styles and create the navigation for our site.
 ```HTML  
 
 <template name="MainLayout">
-    {{> Header}} {{> SideNav}}
+    {{> Header}}  
+    {{> SideNav}}
     <main class="main-layout">
         {{> Template.dynamic template=main}}
     </main>
