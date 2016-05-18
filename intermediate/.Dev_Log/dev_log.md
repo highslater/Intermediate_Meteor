@@ -843,6 +843,73 @@ we add styles and create the navigation for our site.
 ```
 
 ###<a id="Tutorial_12"></a>Tutorial #12 - Building Our Recipes List:  
+Published on Nov 2, 2015  
+In this Intermediate Meteor video tutorial,  
+we further build out the Recipe Book page by iterating over our cursor  
+and sub document to output our data. 
+
+
+######intermediate/client/recipes/Recipes.html  
+```HTML 
+<template name="Recipes">
+    {{> NewRecipe}}
+    <section class="recipes">
+        {{#each recipes}}
+            {{> Recipe}}
+        {{/each}}
+    </section>
+</template>
+
+```
+
+######intermediate/client/recipes/Recipe.html  
+
+```HTML
+<template name="Recipe">
+    <article class="recipe">
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+        <p>
+            {{#each ingredients}}
+                <span class="ingredients">{{name}} - {{amount}}</span>
+            {{/each}}
+        </p>
+    </article>
+</template>
+
+```
+
+
+######intermediate/client/recipes/Recipes.js  
+
+
+```JavaScript 
+
+Meteor.subscribe('recipes', );
+
+Template.Recipes.helpers({
+    recipes: () => {
+        return Recipes.find({});
+    }, // end of recipes
+}); // end of Template.Recipes.helpers
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
