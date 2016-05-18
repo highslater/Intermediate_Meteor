@@ -776,3 +776,75 @@ FlowRouter.route('/recipe-book', {
 Published on Oct 28, 2015  
 In this Intermediate Meteor video tutorial,  
 we add styles and create the navigation for our site.
+
+######intermediate/client/partials/SideNav.html  
+
+```HTML  
+
+<template name="SideNav">
+    <nav class="side-nav">
+        <ul>
+            <li>
+                <a href="/recipe-book"><i class="fa fa-list"></i>Recipe Book</a>
+            </li>
+            <li>
+                <a href="/menu"><i class="fa fa-map-o"></i>Menu</a>
+            </li>
+            <li>
+                <a href="/shopping-list"><i class="fa fa-shopping-cart"></i>Shopping List</a>
+            </li>
+        </ul>
+    </nav>
+</template>
+
+```
+
+######intermediate/client/partials/Header.html  
+
+
+```HTML  
+
+<template name="Header">
+    <header>
+        <h1>My Recipe Book</h1> {{> loginButtons}}
+    </header>
+</template>
+
+```
+
+######intermediate/client/layouts/HomeLayout.html  
+
+```HTML 
+
+<template name="HomeLayout">
+    {{> Header}}
+    <main>
+        <div class="billboard">
+            <h2>Organize Your Meals</h2>
+        </div>
+    </main>
+</template>
+
+```
+
+######intermediate/client/layouts/MainLayout.html  
+
+```HTML  
+
+<template name="HomeLayout">
+    {{> Header}}
+    <main>
+        <div class="billboard">
+            <h2>Organize Your Meals</h2>
+        </div>
+    </main>
+</template>
+
+```
+
+
+
+
+
+
+
