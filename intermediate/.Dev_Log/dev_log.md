@@ -904,7 +904,45 @@ Published on Nov 2, 2015
 In this Intermediate Meteor video tutorial,  
 we add styles and create the navigation for our site.
 
+######intermediate/client/recipes/Recipes.js  
 
+
+```JavaScript  
+
+Template.Recipes.onCreated(function() {
+    var self = this;
+    self.autorun(function() {
+        self.subscribe('recipes');
+    }); // end of self.autorun
+}); // end of Template.Recipes.onCreated
+
+Template.Recipes.helpers({
+    recipes: () => {
+        return Recipes.find({});
+    }, // end of recipes
+}); // end of Template.Recipes.helpers
+
+```
+
+######intermediate/client/recipes/Recipes.html  
+
+
+```HTML  
+
+Template.Recipes.onCreated(function() {
+    var self = this;
+    self.autorun(function() {
+        self.subscribe('recipes');
+    }); // end of self.autorun
+}); // end of Template.Recipes.onCreated
+
+Template.Recipes.helpers({
+    recipes: () => {
+        return Recipes.find({});
+    }, // end of recipes
+}); // end of Template.Recipes.helpers
+
+```
 
 
 
