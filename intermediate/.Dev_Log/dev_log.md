@@ -16,9 +16,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #10 - Private & Public Settings and Google Analytics] (#Tutorial_10)  
 [Tutorial #11 - Creating Partials and Adding Styles] (#Tutorial_11)  
 [Tutorial #12 - Building Our Recipes List] (#Tutorial_12)  
-[Tutorial #13 - Template Level Subscriptions] (#Tutorial_13)
-
-
+[Tutorial #13 - Template Level Subscriptions] (#Tutorial_13)  
+[Tutorial #14 - FlowRouter Parameters] (#Tutorial_14)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -157,6 +156,7 @@ reactive-dict       added, version 1.1.7
 kadira:flow-router: Carefully Designed Client Side Router for Meteor
 
 ```
+
 ######.meteor/packages [ AFTER ] 
 
 ```Text
@@ -195,7 +195,6 @@ zimme:active-route      # Active route helpers
 gwendall:auth-client-callbacks  # Adds client-side onLogin and onLogout methods
 
 ```
-
 
 ###<a id="Tutorial_3"></a>Tutorial #3 - Project Structure:  
 Published on Oct 14, 2015  
@@ -239,7 +238,6 @@ In this video, I talk about creating our layouts for our routing in the next epi
 
 ```
 
-
 ######intermediate/client/layouts/MainLayout.html  
 
 ```HTML
@@ -254,7 +252,6 @@ In this video, I talk about creating our layouts for our routing in the next epi
 </template>
 
 ```
-
 
 ###<a id="Tutorial_5"></a>Tutorial #5 - Basic Routing With Layouts in Meteor: 
 Published on Oct 19, 2015  
@@ -280,8 +277,6 @@ FlowRouter.route('/test', {
 }); // end of FlowRouter.route
 
 ```
-
-
 
 ######intermediate/client/layouts/MainLayout.html  
 
@@ -356,7 +351,6 @@ Recipes.attachSchema(RecipeSchema);
 Published on Oct 26, 2015  
 In this Intermediate Meteor video tutorial, I talk about using FlowRouter and Blaze Layouts  
 to create some basic routes to get us going.
-
 
 ######intermediate/lib/routes.js  
 
@@ -463,7 +457,6 @@ Recipes.attachSchema(RecipeSchema);
 
 ![Web Output [/recipe-book] ] (./Images/image_006.png "Web Output [/recipe-book] ")
 
-
 ###<a id="Tutorial_8"></a>Tutorial #8 - Insert Permissions, Publishing & Meteor Toys:  
 Published on Oct 26, 2015  
 In this Intermediate Meteor video tutorial, I talk about adding allow permissions, publishing and subscribing and Meteor  
@@ -530,7 +523,6 @@ zimme:active-route              2.3.2  Active route helpers
 
 ```
 
-
 ######intermediate/server/publish.js  
 
 ```JavaScript  
@@ -542,7 +534,6 @@ Meteor.publish('recipes', function() {
 ```
 
 ######intermediate/client/recipes/Recipes.js  
-
 
 ```JavaScript  
 
@@ -685,7 +676,6 @@ In this Intermediate Meteor video tutorial,
 I talk about creating and using a settings.json file to store private or public settings.  
 We also set up Google Analytics for our routing.
 
-
 ######Console Output:  
 
 ```Console  
@@ -735,7 +725,6 @@ datariot:ganalytics: Publish pageviews and events to Google Analytics using the 
 
 ```
 
-
 ######intermediate/settings.json  
 
 ```Json 
@@ -752,7 +741,6 @@ datariot:ganalytics: Publish pageviews and events to Google Analytics using the 
 }
 
 ```
-
 
 ######intermediate/lib/routes.js  
 
@@ -775,7 +763,6 @@ FlowRouter.route('/recipe-book', {
 }); // end of FlowRouter.route
 
 ```
-
 
 ###<a id="Tutorial_11"></a>Tutorial #11 - Creating Partials and Adding Styles:  
 Published on Oct 28, 2015  
@@ -805,7 +792,6 @@ we add styles and create the navigation for our site.
 ```
 
 ######intermediate/client/partials/Header.html  
-
 
 ```HTML  
 
@@ -852,7 +838,6 @@ In this Intermediate Meteor video tutorial,
 we further build out the Recipe Book page by iterating over our cursor  
 and sub document to output our data. 
 
-
 ######intermediate/client/recipes/Recipes.html  
 ```HTML 
 <template name="Recipes">
@@ -883,9 +868,7 @@ and sub document to output our data.
 
 ```
 
-
 ######intermediate/client/recipes/Recipes.js  
-
 
 ```JavaScript 
 
@@ -906,7 +889,6 @@ we add styles and create the navigation for our site.
 
 ######intermediate/client/recipes/Recipes.js  
 
-
 ```JavaScript  
 
 Template.Recipes.onCreated(function() {
@@ -926,7 +908,6 @@ Template.Recipes.helpers({
 
 ######intermediate/client/recipes/Recipes.html  
 
-
 ```HTML  
 
 <template name="Recipes">
@@ -942,9 +923,12 @@ Template.Recipes.helpers({
     </section>
 </template>
 
-
 ```
 
+###<a id="Tutorial_14"></a>Tutorial #14 - FlowRouter Parameters:  
+Published on Nov 2, 2015  
+In this Intermediate Meteor video tutorial,  
+I show you how to take parameters from a url and use them to filter your data.  
 
 
 
