@@ -929,18 +929,19 @@ Template.Recipes.helpers({
 
 ```HTML  
 
-Template.Recipes.onCreated(function() {
-    var self = this;
-    self.autorun(function() {
-        self.subscribe('recipes');
-    }); // end of self.autorun
-}); // end of Template.Recipes.onCreated
+<template name="Recipes">
+    {{> NewRecipe}}
+    <section class="recipes">
+        {{#if Template.subscriptionsReady}}
+            {{#each recipes}}
+                {{> Recipe}}
+            {{/each}}
+        {{else}}
+            <p>loading</p>
+        {{/if}}
+    </section>
+</template>
 
-Template.Recipes.helpers({
-    recipes: () => {
-        return Recipes.find({});
-    }, // end of recipes
-}); // end of Template.Recipes.helpers
 
 ```
 
