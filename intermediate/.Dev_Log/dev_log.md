@@ -930,7 +930,82 @@ Published on Nov 2, 2015
 In this Intermediate Meteor video tutorial,  
 I show you how to take parameters from a url and use them to filter your data.  
 
+######intermediate/client/recipes/Recipe.html  
 
+```HTML  
+
+<template name="Recipe">
+    <article class="recipe">
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+        <p>
+            {{#each ingredients}}
+                <span class="ingredients">{{name}} - {{amount}}</span>
+            {{/each}}
+        </p>
+        <a href="/recipe/{{_id}}">View Details</a>
+    </article>
+</template>
+
+```
+
+######intermediate/lib/routes.js  
+
+```JavaScript  
+
+FlowRouter.route('/', {
+    name: 'home',
+    action() {
+        GAnalytics.pageview();
+        BlazeLayout.render('HomeLayout');
+    }, // end of action
+}); // end of FlowRouter.route
+
+FlowRouter.route('/recipe-book', {
+    name: 'recipe-book',
+    action() {
+        GAnalytics.pageview();
+        BlazeLayout.render('MainLayout', { main: 'Recipes' });
+    }, // end of action
+}); // end of FlowRouter.route
+
+FlowRouter.route('/recipe/:id', {
+    name: 'recipe-book',
+    action() {
+        GAnalytics.pageview();
+        BlazeLayout.render('MainLayout', { main: 'RecipeSingle' });
+    }, // end of action
+}); // end of FlowRouter.route
+
+```
+
+######intermediate/client/recipes/RecipeSingle.html  
+```
+<template name="RecipeSingle">
+    <h1>{{recipe.name}}</h1>
+</template>
+
+```
+
+######intermediate/client/recipes/RecipeSingle.js  
+
+```JavaScript  
+
+Template.RecipeSingle.onCreated(function() {
+    var self = this;
+    self.autorun(function() {
+        self.subscribe('recipes');
+    }); // end of self.autorun
+}); // end of Template.Recipes.onCreated
+
+Template.RecipeSingle.helpers({
+    recipe: () => {
+        var id = FlowRouter.getParam('id')
+        return Recipes.findOne({ _id: id });
+    }, // end of recipes
+}); // end of Template.Recipes.helpers
+
+```
 
 
 
