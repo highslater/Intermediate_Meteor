@@ -1013,7 +1013,51 @@ Published on Nov 2, 2015
 In this Intermediate Meteor video tutorial,  
 we add a single item subscription so that we are only subscribing to the data we need.  
 
+######Console Output:  
 
+```Console 
+
+@mint64 ~/intermediate  
+$ meteor add check
+                                              
+check: Check whether a value matches a pattern
+
+```
+
+######intermediate/client/recipes/RecipeSingle.js  
+```JavaScript 
+
+Template.RecipeSingle.onCreated(function() {
+    var self = this;
+    self.autorun(function() {
+        var id = FlowRouter.getParam('id');
+        self.subscribe('singleRecipe', id);
+    }); // end of self.autorun
+}); // end of Template.Recipes.onCreated
+
+Template.RecipeSingle.helpers({
+    recipe: () => {
+        var id = FlowRouter.getParam('id');
+        return Recipes.findOne({ _id: id });
+    }, // end of recipes
+}); // end of Template.Recipes.helpers
+
+```
+
+######intermediate/server/publish.js  
+
+```JavaScript  
+
+Meteor.publish('recipes', function() {
+    return Recipes.find({ author: this.userId })
+}); // end of Meteor.publish
+
+Meteor.publish('singleRecipe', function(id) {
+    check(id, String);
+    return Recipes.find({ _id: id })
+}); // end of Meteor.publish
+
+```
 
 
 

@@ -34,3 +34,4 @@ zimme:active-route      # Active route helpers
 gwendall:auth-client-callbacks      # Adds client-side onLogin and onLogout methods
 meteortoys:allthings        # Insanely Handy Development Tools
 datariot:ganalytics     # Publish pageviews and events to Google Analytics using the new analytics.js code.
+check       # Check whether a value matches a pattern
