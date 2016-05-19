@@ -17,7 +17,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #11 - Creating Partials and Adding Styles] (#Tutorial_11)  
 [Tutorial #12 - Building Our Recipes List] (#Tutorial_12)  
 [Tutorial #13 - Template Level Subscriptions] (#Tutorial_13)  
-[Tutorial #14 - FlowRouter Parameters] (#Tutorial_14)
+[Tutorial #14 - FlowRouter Parameters] (#Tutorial_14)  
+[Tutorial #15 - Single Item Subscriptions] (#Tutorial_15)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -1006,6 +1007,11 @@ Template.RecipeSingle.helpers({
 }); // end of Template.Recipes.helpers
 
 ```
+
+###<a id="Tutorial_15"></a>Tutorial #15 - Single Item Subscriptions:  
+Published on Nov 2, 2015  
+In this Intermediate Meteor video tutorial,  
+we add a single item subscription so that we are only subscribing to the data we need.  
 
 
 
