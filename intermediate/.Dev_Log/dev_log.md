@@ -1112,7 +1112,54 @@ Published on Nov 11, 2015
 In this Intermediate Meteor video tutorial,  
 we write redirects to make sure the user is landing on the correct page when logging in or out.  
 
+######intermediate/lib/routes,js  
 
+```JavaScript  
+
+if (Meteor.isClient) {
+    Accounts.onLogin(function() {
+        FlowRouter.go('recipe-book');
+    }); // end of Accounts.onLogin
+
+    Accounts.onLogout(function() {
+        FlowRouter.go('home');
+    }); // end of Accounts.onLogout
+} // end of if (Meteor.isClient)
+
+FlowRouter.triggers.enter([function(context, redirect) {
+    if (!Meteor.userId()) {
+        FlowRouter.go('home');
+    } // end of if !Meteor.userId()
+}]); // end of FlowRouter.triggers.enter
+
+FlowRouter.route('/', {
+    name: 'home',
+    action() {
+        if (Meteor.userId()) {
+            FlowRouter.go('recipe-book');
+        } // end of if (Meteor.userId())
+        GAnalytics.pageview();
+        BlazeLayout.render('HomeLayout');
+    }, // end of action
+}); // end of FlowRouter.route
+
+FlowRouter.route('/recipe-book', {
+    name: 'recipe-book',
+    action() {
+        GAnalytics.pageview();
+        BlazeLayout.render('MainLayout', { main: 'Recipes' });
+    }, // end of action
+}); // end of FlowRouter.route
+
+FlowRouter.route('/recipe/:id', {
+    name: 'recipe',
+    action() {
+        GAnalytics.pageview();
+        BlazeLayout.render('MainLayout', { main: 'RecipeSingle' });
+    }, // end of action
+}); // end of FlowRouter.route
+
+```
 
 
 

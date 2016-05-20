@@ -1,3 +1,13 @@
+if (Meteor.isClient) {
+    Accounts.onLogin(function() {
+        FlowRouter.go('recipe-book');
+    }); // end of Accounts.onLogin
+
+    Accounts.onLogout(function() {
+        FlowRouter.go('home');
+    }); // end of Accounts.onLogout
+} // end of if (Meteor.isClient)
+
 FlowRouter.triggers.enter([function(context, redirect) {
     if (!Meteor.userId()) {
         FlowRouter.go('home');
