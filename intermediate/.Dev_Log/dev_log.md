@@ -18,7 +18,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #12 - Building Our Recipes List] (#Tutorial_12)  
 [Tutorial #13 - Template Level Subscriptions] (#Tutorial_13)  
 [Tutorial #14 - FlowRouter Parameters] (#Tutorial_14)  
-[Tutorial #15 - Single Item Subscriptions] (#Tutorial_15)
+[Tutorial #15 - Single Item Subscriptions] (#Tutorial_15)  
+[Tutorial #16 - User State Redirects In Routing] (#Tutorial_16)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
