@@ -1060,7 +1060,11 @@ Meteor.publish('singleRecipe', function(id) {
 ```
 
 
-
+###<a id="Tutorial_16"></a>Tutorial #16 - User State Redirects In Routing:  
+Published on Nov 11, 2015  
+In this Intermediate Meteor video tutorial,  
+we write redirects to make sure the user is landing on the correct  
+page based on their login status using FlowRouter.
 
 
 
