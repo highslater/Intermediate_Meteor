@@ -19,7 +19,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #13 - Template Level Subscriptions] (#Tutorial_13)  
 [Tutorial #14 - FlowRouter Parameters] (#Tutorial_14)  
 [Tutorial #15 - Single Item Subscriptions] (#Tutorial_15)  
-[Tutorial #16 - User State Redirects In Routing] (#Tutorial_16)
+[Tutorial #16 - User State Redirects In Routing] (#Tutorial_16)  
+[Tutorial #17 - Login & Logout Redirecting] (#Tutorial_17)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -1105,6 +1106,11 @@ FlowRouter.route('/recipe/:id', {
 }); // end of FlowRouter.route
 
 ```
+
+###<a id="Tutorial_17"></a>Tutorial #17 - Login & Logout Redirecting:  
+Published on Nov 11, 2015  
+In this Intermediate Meteor video tutorial,  
+we write redirects to make sure the user is landing on the correct page when logging in or out.  
 
 
 
