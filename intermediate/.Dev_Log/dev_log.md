@@ -20,7 +20,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #14 - FlowRouter Parameters] (#Tutorial_14)  
 [Tutorial #15 - Single Item Subscriptions] (#Tutorial_15)  
 [Tutorial #16 - User State Redirects In Routing] (#Tutorial_16)  
-[Tutorial #17 - Login & Logout Redirecting] (#Tutorial_17)
+[Tutorial #17 - Login & Logout Redirecting] (#Tutorial_17)  
+[Tutorial #18 - Update Methods & Adding To Menu] (#Tutorial_18)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -1160,6 +1161,51 @@ FlowRouter.route('/recipe/:id', {
 }); // end of FlowRouter.route
 
 ```
+
+
+###<a id="Tutorial_18"></a>Tutorial #18 - Update Methods & Adding To Menu:  
+Published on Nov 18, 2015  
+In this Intermediate Meteor video tutorial,  
+we write our methods and our buttons to toggle something into your weekly menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

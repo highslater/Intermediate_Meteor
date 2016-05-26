@@ -1,3 +1,13 @@
 <template name="RecipeSingle">
-    <h1>{{recipe.name}}</h1>
+    <h1>Name: {{recipe.name}}</h1>
+    <p>Description: {{recipe.desc}}</p>
+    <p>Author: {{recipe.author}}</p>
+    <p>inMenu:
+        {{#if (recipe.inMenu)}}Yes{{else}}No{{/if}}
+    </p>
+    <p>Created At: {{recipe.createdAt}}</p>
+    Ingredients:
+    {{#each recipe.ingredients}}
+        <p class="ingredients">{{name}} - {{amount}}</p>
+    {{/each}}
 </template>
