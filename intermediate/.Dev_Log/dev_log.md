@@ -1257,7 +1257,6 @@ RecipeSchema = new SimpleSchema({
             type: "hidden", // leave out " " and => (STDERR) ReferenceError: hidden is not defined
         }, // end of autoform
     }, // end of author
-
     createdAt: {
         type: Date,
         label: "Created At",
