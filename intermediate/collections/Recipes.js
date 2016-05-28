@@ -4,6 +4,10 @@ Recipes.allow({
     insert: function(userId, doc) {
         return !!userId;
     }, // end of insert
+    update: function(userId, doc) {
+        return !!userId;
+    }, // end of update
+
 }); // end of Recipes.allow
 
 Ingredient = new SimpleSchema({
@@ -61,5 +65,16 @@ RecipeSchema = new SimpleSchema({
         }, // end of autoform
     }, // end of createdAt
 }); // end of RecipeSchema
+
+Meteor.methods({
+    toggleMenuItem: function(id, currentState) {
+        Recipes.update(id, {
+            $set: {
+                inMenu: !currentState
+            } // end of set
+        }); // end of  Recipes.update
+    }, // end of toggleMenuItem
+}); // end of Meteor.methods
+
 
 Recipes.attachSchema(RecipeSchema);

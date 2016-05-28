@@ -1169,6 +1169,130 @@ In this Intermediate Meteor video tutorial,
 we write our methods and our buttons to toggle something into your weekly menu.
 
 
+######intermediate/client/recipes/Recipe.html  
+
+
+```HTML  
+
+<template name="Recipe">
+    <article class="recipe">
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+        <p>
+            {{#each ingredients}}
+                <span class="ingredients">{{name}} - {{amount}}</span>
+            {{/each}}
+        </p>
+        <a href="/recipe/{{_id}}">View Details</a>
+        <button class="btn-primary toggle-menu">Add to Menu</button>
+        <button class="btn-deny toggle-menu">Remove From Menu</button>
+    </article>
+</template>
+
+```
+
+######intermediate/client/recipes/Recipe.js  
+
+```JavaScript
+
+Template.Recipe.events({
+    'click .toggle-menu': function() {
+        Meteor.call('toggleMenuItem', this._id, this.inMenu)
+    }
+}); // end of Template.Recipe.events
+
+```
+
+######intermediate/collections/Recipes.js  
+
+```JavaScript  
+
+Recipes = new Mongo.Collection('recipes');
+
+Recipes.allow({
+    insert: function(userId, doc) {
+        return !!userId;
+    }, // end of insert
+    update: function(userId, doc) {
+        return !!userId;
+    }, // end of update
+
+}); // end of Recipes.allow
+
+Ingredient = new SimpleSchema({
+    name: {
+        type: String
+    }, // end of name
+    amount: {
+        type: String
+    }, // end of amount
+}); // end of Ingredient
+
+RecipeSchema = new SimpleSchema({
+    name: {
+        type: String,
+        label: "Name",
+    }, // end of name
+
+    desc: {
+        type: String,
+        label: "Description",
+    }, // end of desc
+
+    ingredients: {
+        type: [Ingredient]
+    }, // end of ingredients
+
+    inMenu: {
+        type: Boolean,
+        defaultValue: false,
+        optional: true,
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of inMenu
+
+    author: {
+        type: String,
+        label: "Author",
+        autoValue: function() {
+            return this.userId
+        }, // end of autoValue
+        autoform: {
+            type: "hidden", // leave out " " and => (STDERR) ReferenceError: hidden is not defined
+        }, // end of autoform
+    }, // end of author
+
+    createdAt: {
+        type: Date,
+        label: "Created At",
+        autoValue: function() {
+            return new Date();
+        }, // end of autoValue
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of createdAt
+}); // end of RecipeSchema
+
+Meteor.methods({
+    toggleMenuItem: function(id, currentState) {
+        Recipes.update(id, {
+            $set: {
+                inMenu: !currentState
+            } // end of set
+        }); // end of  Recipes.update
+    }, // end of toggleMenuItem
+}); // end of Meteor.methods
+
+
+Recipes.attachSchema(RecipeSchema);
+
+
+
+```
+
+
 
 
 
