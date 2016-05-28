@@ -21,7 +21,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #15 - Single Item Subscriptions] (#Tutorial_15)  
 [Tutorial #16 - User State Redirects In Routing] (#Tutorial_16)  
 [Tutorial #17 - Login & Logout Redirecting] (#Tutorial_17)  
-[Tutorial #18 - Update Methods & Adding To Menu] (#Tutorial_18)
+[Tutorial #18 - Update Methods & Adding To Menu] (#Tutorial_18)  
+[Tutorial #19 - Filtering Our In Menu Items] (#Tutorial_19)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -1282,6 +1283,13 @@ Meteor.methods({
 Recipes.attachSchema(RecipeSchema);
 
 ```
+
+
+###<a id="Tutorial_19"></a>Tutorial #19 - Filtering Our In Menu Items:  
+Published on Nov 18, 2015  
+In this Intermediate Meteor video tutorial,  
+we write the Menu route, clean up our styles and add the menu template iterating over menu items.  
+
 
 
 
