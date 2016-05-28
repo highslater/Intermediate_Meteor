@@ -1216,7 +1216,6 @@ Recipes.allow({
     update: function(userId, doc) {
         return !!userId;
     }, // end of update
-
 }); // end of Recipes.allow
 
 Ingredient = new SimpleSchema({
@@ -1233,16 +1232,13 @@ RecipeSchema = new SimpleSchema({
         type: String,
         label: "Name",
     }, // end of name
-
     desc: {
         type: String,
         label: "Description",
     }, // end of desc
-
     ingredients: {
         type: [Ingredient]
     }, // end of ingredients
-
     inMenu: {
         type: Boolean,
         defaultValue: false,
@@ -1251,7 +1247,6 @@ RecipeSchema = new SimpleSchema({
             type: "hidden",
         }, // end of autoform
     }, // end of inMenu
-
     author: {
         type: String,
         label: "Author",
@@ -1285,10 +1280,7 @@ Meteor.methods({
     }, // end of toggleMenuItem
 }); // end of Meteor.methods
 
-
 Recipes.attachSchema(RecipeSchema);
-
-
 
 ```
 
