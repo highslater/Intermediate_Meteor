@@ -22,7 +22,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #16 - User State Redirects In Routing] (#Tutorial_16)  
 [Tutorial #17 - Login & Logout Redirecting] (#Tutorial_17)  
 [Tutorial #18 - Update Methods & Adding To Menu] (#Tutorial_18)  
-[Tutorial #19 - Filtering Our In Menu Items] (#Tutorial_19)
+[Tutorial #19 - Filtering Our In Menu Items] (#Tutorial_19)  
+[Tutorial #20 - Each:Else for No Results] (#Tutorial_20)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -1401,6 +1402,10 @@ Template.Menu.helpers({
 }); // end of Template.Recipes.helpers
 
 ```
+
+###<a id="Tutorial_20"></a>Tutorial #20 - Each:Else for No Results:  
+Published on Dec 2, 2015  
+In this Intermediate Meteor video tutorial, we improve the menu page. 
 
 
 
