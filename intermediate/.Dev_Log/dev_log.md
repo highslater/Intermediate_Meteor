@@ -1369,10 +1369,38 @@ FlowRouter.route('/menu', {
 ```
 
 
+######intermediate/client/menu/Menu.html  
 
+```HTML   
 
+<template name="Menu">
+    <h1 class="page-title">My Current menu</h1>
+    {{#each recipes}}
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+    {{/each}}
+</template>
 
+```
 
+######intermediate/client/menu/Menu.js  
+
+```JavaScript  
+
+Template.Menu.onCreated(function() {
+    var self = this;
+    self.autorun(function() {
+        self.subscribe('recipes');
+    }); // end of self.autorun
+}); // end of Template.Recipes.onCreated
+
+Template.Menu.helpers({
+    recipes: () => {
+        return Recipes.find({ inMenu: true });
+    }, // end of recipes
+}); // end of Template.Recipes.helpers
+
+```
 
 
 
