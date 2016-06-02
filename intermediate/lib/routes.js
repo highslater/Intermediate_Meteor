@@ -40,3 +40,11 @@ FlowRouter.route('/recipe/:id', {
         BlazeLayout.render('MainLayout', { main: 'RecipeSingle' });
     }, // end of action
 }); // end of FlowRouter.route
+
+FlowRouter.route('/menu', {
+    name: 'menu',
+    action() {
+        GAnalytics.pageview();
+        BlazeLayout.render('MainLayout', { main: 'Menu' });
+    }, // end of action
+}); // end of FlowRouter.route

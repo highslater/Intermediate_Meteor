@@ -1290,6 +1290,28 @@ Published on Nov 18, 2015
 In this Intermediate Meteor video tutorial,  
 we write the Menu route, clean up our styles and add the menu template iterating over menu items.  
 
+######intermediate/client/recipes/Recipe.html  
+
+```HTML
+
+<template name="Recipe">
+    <article class="recipe {{#if inMenu}} in-menu {{/if}}">
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+        <p>
+            {{#each ingredients}}
+                <span class="ingredients">{{name}} - {{amount}}</span>
+            {{/each}}
+        </p>
+        <a href="/recipe/{{_id}}">View Details</a>
+        <button class="btn-primary toggle-menu">Add to Menu</button>
+        <button class="btn-deny toggle-menu">Remove From Menu</button>
+    </article>
+</template>
+
+```
+
+
 
 
 
