@@ -1405,13 +1405,54 @@ Template.Menu.helpers({
 
 ###<a id="Tutorial_20"></a>Tutorial #20 - Each:Else for No Results:  
 Published on Dec 2, 2015  
-In this Intermediate Meteor video tutorial, we improve the menu page. 
+In this Intermediate Meteor video tutorial, we improve the menu page.  
+
+######intermediate/client/menu/Menu>html  
 
 
+```HTML  
+
+<template name="Menu">
+    <h1 class="page-title">My Current menu</h1>
+    {{#each recipes}}
+        {{> MenuItem}}
+        {{else}}
+            <h3>Please add <a href="/recipe-book">recipes</a> to your menu</h3>
+    {{/each}}
+</template>
+<template name="MenuItem">
+    <div class="menu-item">
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+    </div>
+</template>
+
+```
 
 
+######intermediate/client/recipes/Recipe.html  
 
+```HTML  
 
+<template name="Recipe">
+    <article class="recipe {{#if inMenu}} in-menu {{/if}}">
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+        <p>
+            {{#each ingredients}}
+                <span class="ingredients">{{name}} - {{amount}}</span>
+            {{/each}}
+        </p>
+        <a href="/recipe/{{_id}}">View Details</a>
+        {{#if inMenu}}
+            <button class="btn-deny toggle-menu">Remove From Menu</button>
+        {{else}}
+            <button class="btn-primary toggle-menu">Add to Menu</button>
+        {{/if}}
+    </article>
+</template>
+
+```
 
 
 
