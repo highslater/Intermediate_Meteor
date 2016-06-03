@@ -23,7 +23,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #17 - Login & Logout Redirecting] (#Tutorial_17)  
 [Tutorial #18 - Update Methods & Adding To Menu] (#Tutorial_18)  
 [Tutorial #19 - Filtering Our In Menu Items] (#Tutorial_19)  
-[Tutorial #20 - Each:Else for No Results] (#Tutorial_20)
+[Tutorial #20 - Each:Else for No Results] (#Tutorial_20)  
+[Tutorial #21 - Building The Shopping List] (#Tutorial_21)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -1455,7 +1456,9 @@ In this Intermediate Meteor video tutorial, we improve the menu page.
 ```
 
 
-
+###<a id="Tutorial_21"></a>Tutorial #21 - Building The Shopping List:  
+Published on Dec 2, 2015  
+In this Intermediate Meteor video tutorial, we write the Shopping List page. 
 
 
 
