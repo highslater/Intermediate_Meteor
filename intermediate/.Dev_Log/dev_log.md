@@ -24,7 +24,7 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #18 - Update Methods & Adding To Menu] (#Tutorial_18)  
 [Tutorial #19 - Filtering Our In Menu Items] (#Tutorial_19)  
 [Tutorial #20 - Each:Else for No Results] (#Tutorial_20)  
-[Tutorial #21 - Building The Shopping List] (#Tutorial_21)
+[Tutorial #21 - Building The Shopping List] (#Tutorial_21)[Tutorial #22 - Updating With A QuickForm] (#Tutorial_22)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -1563,7 +1563,9 @@ FlowRouter.route('/shopping-list', {
 
 ```
 
-
+###<a id="Tutorial_22"></a>Tutorial #22 - Updating With A QuickForm:  
+Published on Dec 9, 2015  
+In this Intermediate Meteor video tutorial, we write an update quickform and enable autosaving.  
 
 
 
