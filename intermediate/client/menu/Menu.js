@@ -3,10 +3,10 @@ Template.Menu.onCreated(function() {
     self.autorun(function() {
         self.subscribe('recipes');
     }); // end of self.autorun
-}); // end of Template.Recipes.onCreated
+}); // end of Template.Menu.onCreated
 
 Template.Menu.helpers({
     recipes: () => {
         return Recipes.find({ inMenu: true });
     }, // end of recipes
-}); // end of Template.Recipes.helpers
+}); // end of Template.Menu.helpers
