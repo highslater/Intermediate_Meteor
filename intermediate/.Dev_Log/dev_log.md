@@ -1623,7 +1623,7 @@ we add the delete feature and hide the edit form with a session toggle using han
 
 For others like me that are wondering how exactly "this" behaves inside arrow functions at 02:00  
 there is a good explanation about why => arrow functions do not bind a this, arguments,  
-super (ES6), or new.target (ES6) https://blog.getify.com/arrow-this/﻿
+super (ES6), or new.target (ES6) https://blog.getify.com/arrow-this
 
 
 
