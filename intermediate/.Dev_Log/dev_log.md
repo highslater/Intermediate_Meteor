@@ -1570,6 +1570,103 @@ Published on Dec 9, 2015
 In this Intermediate Meteor video tutorial,  
 we write an update quickform and enable autosaving.  
 
+######intermediate/client/recipes/Recipe.html
+
+
+```HTML  
+
+<template name="Recipe">
+    <article class="recipe {{#if inMenu}} in-menu {{/if}}">
+        <h3>{{name}}</h3>
+        <p>{{desc}}</p>
+        <p>
+            {{#each ingredients}}
+                <span class="ingredients">{{name}} - {{amount}}</span>
+            {{/each}}
+        </p>
+        <a href="/recipe/{{_id}}">View Details</a>
+        {{#if inMenu}}
+            <button class="btn-deny toggle-menu">Remove From Menu</button>
+        {{else}}
+            <button class="btn-primary toggle-menu">Add to Menu</button>
+        {{/if}}
+        {{> quickForm collection="Recipes" id=updateRecipeId type="update" doc=this autosave=true}}
+    </article>
+</template>
+
+```
+
+######intermediate/client/recipes/Recipe.js  
+
+```JavaScript  
+
+Template.Recipe.helpers({
+    updateRecipeId: function() {
+        return this._id;
+    }, // end of recipes
+}); // end of Template.Recipe.helpers
+
+Template.Recipe.events({
+    'click .toggle-menu': function() {
+        Meteor.call('toggleMenuItem', this._id, this.inMenu)
+    }
+}); // end of Template.Recipe.events
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
