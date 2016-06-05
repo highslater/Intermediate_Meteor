@@ -1619,7 +1619,10 @@ Template.Recipe.events({
 ###<a id="Tutorial_23"></a>Tutorial #23 - Deleting Recipes and Session Helpers:  
 Published on Dec 9, 2015  
 In this Intermediate Meteor video tutorial,  
-we add the delete feature and hide the edit form with a session toggle using handlebars helpers
+we add the delete feature and hide the edit form with a session toggle using handlebars helpers.  
+For others like me that was wondering how exactly "this" behaves inside arrow functions at 02:00  
+here there is a good explanation about why => arrow functions do not bind a this, arguments,  
+super (ES6), or new.target (ES6) http://blog.getify.com/arrow-this/﻿
 
 
 
