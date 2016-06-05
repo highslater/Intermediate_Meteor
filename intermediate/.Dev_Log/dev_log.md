@@ -25,9 +25,10 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #19 - Filtering Our In Menu Items] (#Tutorial_19)  
 [Tutorial #20 - Each:Else for No Results] (#Tutorial_20)  
 [Tutorial #21 - Building The Shopping List] (#Tutorial_21)  
-[Tutorial #22 - Updating With A QuickForm] (#Tutorial_22)
+[Tutorial #22 - Updating With A QuickForm] (#Tutorial_22)  
+[Tutorial #23 - Deleting Recipes and Session Helpers] (#Tutorial_23)
 
-
+Deleting Recipes and Session Helpers
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
 
 Here I introduce the project we'll be creating in this series.
@@ -1615,7 +1616,10 @@ Template.Recipe.events({
 ```
 
 
-
+###<a id="Tutorial_23"></a>Tutorial #23 - Deleting Recipes and Session Helpers:  
+Published on Dec 9, 2015  
+In this Intermediate Meteor video tutorial,  
+we add the delete feature and hide the edit form with a session toggle using handlebars helpers
 
 
 
