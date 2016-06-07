@@ -1625,9 +1625,149 @@ For others like me that are wondering how exactly "this" behaves inside arrow fu
 there is a good explanation about why => arrow functions do not bind a this, arguments,  
 super (ES6), or new.target (ES6) https://blog.getify.com/arrow-this
 
+######intermediate/client/recipes/Recipe.html  
+
+```HTML  
+
+<template name="Recipe">
+    <article class="recipe {{#if inMenu}} in-menu {{/if}}">
+        <h3>{{name}}</h3>
+        {{#if $.Session.get 'editMode'}}
+            {{> quickForm collection="Recipes" id=updateRecipeId type="update" doc=this autosave=true}}
+        {{else}}
+            <p>{{desc}}</p>
+            <p>
+                {{#each ingredients}}
+                    <span class="ingredients">{{name}} - {{amount}}</span>
+                {{/each}}
+            </p>
+            <a href="/recipe/{{_id}}">View Details</a>
+            {{#if inMenu}}
+                <button class="btn-deny toggle-menu">Remove From Menu</button>
+            {{else}}
+                <button class="btn-primary toggle-menu">Add to Menu</button>
+            {{/if}}
+        {{/if}}
+        <i class="fa fa-pencil"></i>
+        <i class="fa fa-trash"></i>
+    </article>
+</template>
+
+```
+
+######intermediate/client/recipes/Recipe.js  
+
+```JavaScript  
+
+emplate.Recipe.helpers({
+    updateRecipeId: function() {
+        return this._id;
+    }, // end of recipes
+}); // end of Template.Recipe.helpers
+
+Template.Recipe.events({
+    'click .toggle-menu': function() {
+        Meteor.call('toggleMenuItem', this._id, this.inMenu)
+    }, // end of click .toggle-menu
+    'click .fa-trash': function() {
+        Meteor.call('deleteRecipe', this._id);
+    }, // end of click .fa-trash
+    'click .fa-pencil': function() {
+        Session.set('editMode', !Session.get('editMode'));
+    }, // end of click .fa-pencil
+}); // end of Template.Recipe.events  
+
+```
+
+######intermediate/collections/Recipes.js  
+
+```JavaScript  
+
+Recipes = new Mongo.Collection('recipes');
+
+Recipes.allow({
+    insert: function(userId, doc) {
+        return !!userId;
+    }, // end of insert
+    update: function(userId, doc) {
+        return !!userId;
+    }, // end of update
+
+}); // end of Recipes.allow
+
+Ingredient = new SimpleSchema({
+    name: {
+        type: String
+    }, // end of name
+    amount: {
+        type: String
+    }, // end of amount
+}); // end of Ingredient
+
+RecipeSchema = new SimpleSchema({
+    name: {
+        type: String,
+        label: "Name",
+    }, // end of name
+
+    desc: {
+        type: String,
+        label: "Description",
+    }, // end of desc
+
+    ingredients: {
+        type: [Ingredient]
+    }, // end of ingredients
+
+    inMenu: {
+        type: Boolean,
+        defaultValue: false,
+        optional: true,
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of inMenu
+
+    author: {
+        type: String,
+        label: "Author",
+        autoValue: function() {
+            return this.userId
+        }, // end of autoValue
+        autoform: {
+            type: "hidden", // leave out " " and => (STDERR) ReferenceError: hidden is not defined
+        }, // end of autoform
+    }, // end of author
+
+    createdAt: {
+        type: Date,
+        label: "Created At",
+        autoValue: function() {
+            return new Date();
+        }, // end of autoValue
+        autoform: {
+            type: "hidden",
+        }, // end of autoform
+    }, // end of createdAt
+}); // end of RecipeSchema
+
+Meteor.methods({
+    toggleMenuItem: function(id, currentState) {
+        Recipes.update(id, {
+            $set: {
+                inMenu: !currentState
+            } // end of set
+        }); // end of  Recipes.update
+    }, // end of toggleMenuItem
+    deleteRecipe: function(id) {
+        Recipes.remove(id);
+    }
+}); // end of Meteor.methods
 
 
+Recipes.attachSchema(RecipeSchema);
 
+```
 
 
 
