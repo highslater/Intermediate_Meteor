@@ -26,9 +26,11 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #20 - Each:Else for No Results] (#Tutorial_20)  
 [Tutorial #21 - Building The Shopping List] (#Tutorial_21)  
 [Tutorial #22 - Updating With A QuickForm] (#Tutorial_22)  
-[Tutorial #23 - Deleting Recipes and Session Helpers] (#Tutorial_23)
+[Tutorial #23 - Deleting Recipes and Session Helpers] (#Tutorial_23)  
+[Tutorial #24 - Scoped Reactivity With Reactive Vars] (#Tutorial_24)
 
-Deleting Recipes and Session Helpers
+
+
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
 
 Here I introduce the project we'll be creating in this series.
@@ -1768,6 +1770,12 @@ Meteor.methods({
 Recipes.attachSchema(RecipeSchema);
 
 ```
+
+
+###<a id="Tutorial_24"></a>Tutorial #24 - Scoped Reactivity With Reactive Vars:  
+Published on Dec 16, 2015  
+In this Intermediate Meteor video tutorial,  
+we add the edit toggle feature scoped to each individual recipe using Reactive Vars in Meteor.  
 
 
 
