@@ -1843,17 +1843,78 @@ Published on Dec 16, 2015
 In this Intermediate Meteor video tutorial,  
 we wrap up our recipe project and talk about what's to come in the future.  
 
+######intermediate/client/recipes/Recipes.html  
+
+```HTML  
+
+<template name="Recipes">
+    {{#if $.Session.get 'newRecipe'}}
+        {{> NewRecipe}}
+    {{else}}
+        <button class="new-recipe">New Recipe</button>
+    {{/if}}
+    <section class="recipes">
+        {{#if Template.subscriptionsReady}}
+            {{#each recipes}}
+                {{> Recipe}}
+            {{/each}}
+        {{else}}
+            <p>Loading</p>
+        {{/if}}
+    </section>
+</template>
+
+```
 
 
+######intermediate/client/recipes/NewRecipe.html  
 
+```HTML  
 
+<template name="NewRecipe">
+    <div class="new-recipe-container">
+        <i class="fa fa-close"></i> {{> quickForm collection="Recipes" id="insertRecipeForm" type="insert" class="new-recipe-form"}}
+    </div>
+</template>
 
+```
 
+######intermediate/client/recipes/NewRecipe.js  
 
+```JavaScript  
 
+Template.NewRecipe.events({
+    'click .fa-close': function() {
+        Session.set('newRecipe', false)
+    }, // end of click .fa-close
+}); // end of Template.NewRecipe.events 
 
+```
 
+######intermediate/client/recipes/Recipes.js  
 
+```JavaScript  
+
+Template.Recipes.onCreated(function() {
+    var self = this;
+    self.autorun(function() {
+        self.subscribe('recipes');
+    }); // end of self.autorun
+}); // end of Template.Recipes.onCreated
+
+Template.Recipes.helpers({
+    recipes: () => {
+        return Recipes.find({});
+    }, // end of recipes
+}); // end of Template.Recipes.helpers
+
+Template.Recipes.events({
+    'click .new-recipe': () => {
+        Session.set('newRecipe', true)
+    }, // end of click .new-recipe
+}); // end of Template.Recipes.events 
+
+```
 
 
 
