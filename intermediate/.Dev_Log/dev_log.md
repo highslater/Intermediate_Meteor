@@ -27,8 +27,8 @@ contact list, chat app, checking/savings account, expense account,
 [Tutorial #21 - Building The Shopping List] (#Tutorial_21)  
 [Tutorial #22 - Updating With A QuickForm] (#Tutorial_22)  
 [Tutorial #23 - Deleting Recipes and Session Helpers] (#Tutorial_23)  
-[Tutorial #24 - Scoped Reactivity With Reactive Vars] (#Tutorial_24)
-
+[Tutorial #24 - Scoped Reactivity With Reactive Vars] (#Tutorial_24)  
+[Tutorial #25 - Wrapping Up] (#Tutorial_25)
 
 
 ###<a id="Tutorial_1"></a>Tutorial #1 - Project Introduction:  
@@ -1838,7 +1838,10 @@ Template.Recipe.events({
 
 ```
 
-
+###<a id="Tutorial_25"></a>Tutorial #25 - Wrapping Up:  
+Published on Dec 16, 2015  
+In this Intermediate Meteor video tutorial,  
+we wrap up our recipe project and talk about what's to come in the future.  
 
 
 
