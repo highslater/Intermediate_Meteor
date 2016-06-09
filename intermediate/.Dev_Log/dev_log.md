@@ -1777,7 +1777,66 @@ Published on Dec 16, 2015
 In this Intermediate Meteor video tutorial,  
 we add the edit toggle feature scoped to each individual recipe using Reactive Vars in Meteor.  
 
+######intermediate/client/recipes/Recipe.js  
 
+```JavaScript  
+
+Template.Recipe.onCreated(function() {
+    this.editMode = new ReactiveVar(false);
+}); // end of Template.Recipe.onCreated
+
+Template.Recipe.helpers({
+    updateRecipeId: function() {
+        return this._id;
+    }, // end of updateRecipeId
+    editMode: function() {
+        return Template.instance().editMode.get();
+    }, // end of editMode
+}); // end of Template.Recipe.helpers
+
+Template.Recipe.events({
+    'click .toggle-menu': function() {
+        Meteor.call('toggleMenuItem', this._id, this.inMenu)
+    }, // end of click .toggle-menu
+    'click .fa-trash': function() {
+        Meteor.call('deleteRecipe', this._id);
+    }, // end of click .fa-trash
+    'click .fa-pencil': function(event, template) {
+        template.editMode.set(!template.editMode.get())
+    }, // end of click .fa-pencil
+}); // end of Template.Recipe.events
+
+```
+
+######intermediate/client/recipes/Recipe.html  
+
+```HTML  
+
+<template name="Recipe">
+    <article class="recipe {{#if inMenu}} in-menu {{/if}}">
+        <h3>{{name}}</h3>
+        {{#if editMode}}
+            {{> quickForm collection="Recipes" id=updateRecipeId type="update" doc=this autosave=true}}
+        {{else}}
+            <p>{{desc}}</p>
+            <p>
+                {{#each ingredients}}
+                    <span class="ingredients">{{name}} - {{amount}}</span>
+                {{/each}}
+            </p>
+            <a href="/recipe/{{_id}}">View Details</a>
+            {{#if inMenu}}
+                <button class="btn-deny toggle-menu">Remove From Menu</button>
+            {{else}}
+                <button class="btn-primary toggle-menu">Add to Menu</button>
+            {{/if}}
+        {{/if}}
+        <i class="fa fa-pencil"></i>
+        <i class="fa fa-trash"></i>
+    </article>
+</template>
+
+```
 
 
 
